@@ -1,0 +1,167 @@
+.header{
+   
+  
+   /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
+    .header_nav_bar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        height: $height-nav-bar;
+        background-color: $color-fondo-nav-bar;
+        box-shadow: $boxshadow-tipo1;
+        overflow: hidden;
+    
+        .header_nav_logo1{
+            align-self: stretch; 
+            background-color:transparent;
+            margin: 0px 30px 0px 40px;
+            justify-self: flex-start;
+            flex-grow: 0;
+            
+        }
+
+
+        .header_nav_toggle{
+            
+            display: none;
+            color:white;
+            font-size: 80px;
+            font-weight: bolder;
+            background: transparent;
+            border: none;
+            &:hover{
+                color: $color-fondo-nav-bar-media;
+            }
+        }
+
+        .nav_lista_secciones_sitio{
+            display: flex;
+            height:100%;
+            justify-content:start;
+            justify-self: flex-start; 
+            margin: 0 0px 0 0;
+            background-color:transparent;
+            margin: 0px 20px 0px 0px;
+            flex-grow: 1;
+           
+            
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items:center;
+                background-color:transparent;
+                
+                li{
+                    list-style-type:none;
+                    padding: 30px 15px 30px 15px;
+                    background-color:transparent;
+                    &:hover{
+                        background-color: $color-fondo-nav-bar-hover;/* rgba(34, 9, 100, 0.733);*/
+                        transform: scale(1.04);
+                        box-shadow: $boxshadow-tipo3;
+                    }
+                    
+                    a{
+                    width: max-content;
+                    font: familia_1;
+                    color: #f8f7f7;
+                    text-decoration: none;
+                    background-color:transparent;
+                    letter-spacing: 0.15em;
+                    font-style:normal;
+                    font-weight:400px;
+                    font-size: 16px;
+                    }
+                }   
+            }
+        }
+
+        .header_nav_mxflag{
+            /*flex-grow: 0.2;*/
+            height: 40px; 
+            background-color:transparent;
+            margin: 0 20px 0 0;
+            justify-self: flex-end;
+            
+            flex-grow: 0;
+            
+        }
+    }
+
+    
+
+    .social_bar{
+
+
+        position: fixed;
+        
+        left: $posicion-x-social-bar;
+        top: $posicion-y-social-bar;
+        transition: left 0.8s;
+        background-color:$color-social-bar;
+        border-radius: 25px;
+        box-shadow: $boxshadow-tipo1;
+
+        
+        
+        nav{
+            background-color: transparent;
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                background-color: transparent;
+                text-decoration: none;
+                padding: 5px 5px 5px 5px;
+               
+
+                li{
+                    list-style-type:none;
+                    background-color:transparent;
+                    
+                    a{
+                        background-color:transparent;
+                        
+                        img{
+                            background-color: transparent;
+                            width: $alto-iconos-social-bar;
+                            height: $ancho-iconos-social-bar;
+                           &:hover{
+                                background-blend-mode:soft-light;
+                                transform: scale(1.3);
+                            }
+                            
+                        }
+
+                    } 
+                }
+            }
+        }
+
+        .boton_activar_social_bar{
+         
+            @include estilo_boton_redondo_transparente;
+            position: fixed;
+            top: 600px;
+            left: 96%;
+           
+        }
+
+    }
+
+    
+    .social_bar_visible{
+
+       left: 100%;
+    }
+
+
+
+}
+    
+
+
+

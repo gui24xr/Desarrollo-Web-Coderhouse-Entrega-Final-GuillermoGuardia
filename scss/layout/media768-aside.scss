@@ -1,0 +1,70 @@
+
+@media (max-width: 768px){
+
+
+
+.portada_intro{
+
+    top: 20%;
+    width: 90%;
+    height: 900px;
+    background-size:contain;
+    background-position-y:100px ;
+
+    .close_intro_toggle{
+
+       
+    }
+
+    .logo_intro{
+
+      
+    }
+
+}
+
+.intro_visible_off{
+
+   left:100%;
+}
+
+.intro_visible_on{
+
+    left:5%;
+}
+
+
+
+
+.portada_noticias{
+
+    position: fixed;
+    top: 8%;
+    left: -100%;
+    display: flex;
+    width: 90%;
+    height: 800px;
+
+    p{
+        
+    }
+    
+
+    .close_noticias_toggle{
+
+    
+    }
+
+}
+
+.intro_noticias_off{
+
+   left:100%;
+}
+
+.noticias_visible{
+
+    left:5%;
+}
+
+}

@@ -1,0 +1,34 @@
+
+
+
+.biografia_container{
+        
+    @include container_secciones(flex,url("../imagenes/img_portada_bio.jpg"));
+    background-size:cover;
+    background-repeat: no-repeat;
+    /*background-position-x: 400px;*/
+    align-items: end; 
+    .contenedor_txt{
+        @include contenedor_informacion(column,35%,93%,rgba(5, 90, 55, 0.85));
+        justify-content: space-evenly;
+        margin: 50px 0px 0 50px;
+        h1{
+            padding-left: 30px;
+            background-color: transparent;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(255, 255, 255);
+        }
+        p{
+            width: 85%;
+            height: 70%;
+            align-self: center;
+            background-color: transparent;
+            overflow-y: scroll;
+            color:white;
+            font-family: familia_3;
+        }
+
+    }       
+}
+
+

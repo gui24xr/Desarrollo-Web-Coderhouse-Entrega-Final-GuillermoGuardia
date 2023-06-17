@@ -1,0 +1,131 @@
+@mixin container_main{
+    
+    display: flex;
+    width: 100%;
+    height: 720px;
+    margin: 20px 0 0 0;/*70px 0 10px 0; 70px para compensar header fiex*/
+    padding-bottom: 30px;
+    overflow: hidden;
+    box-shadow: $boxshadow-tipo1;
+    
+    
+}
+
+
+
+
+/* CONTENEDOR DE LOS MAIN DE SECCIONES (EXCEPTO INDEX)*/
+@mixin container_secciones($tipo-display,$background-pic-seccion) {
+
+    display: $tipo-display;
+    width: 96%;
+    height: 650px;
+    margin: 70px auto 30px auto; /*70px para compensar header fiex*/
+    overflow: hidden;   
+    box-shadow: $boxshadow-tipo1;
+    /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+    background-image: $background-pic-seccion;
+    /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+}
+
+
+/* CONTENEDOR GRID DE GALERIA */
+@mixin container_grid_secciones($background-pic-seccion) {
+
+    display: grid;
+    width: 92%;
+    height: 600px;
+    margin: 70px 0px 30px 50px; /*70px para compensar header fiex*/
+    overflow: hidden;   
+    box-shadow: $boxshadow-tipo1;
+    /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+    background-image: $background-pic-seccion;
+    /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+}
+
+
+
+
+/* CONTENEDOR UTILIZADO PARA CONTENER INFORMACION EN ALGUNAS SECCIONES COMO BIOGRAFIA Y TOUR */
+@mixin contenedor_informacion($direccion-flex,$width,$height,$backgroundcolor){
+    
+    display: flex;
+    flex-direction: $direccion-flex;
+    width: $width;
+    height: $height;
+    background-color: $backgroundcolor;
+    overflow: hidden;
+    box-shadow: $boxshadow-tipo1;
+}
+
+
+
+/* CONTENEDOR DE LOS MAIN DE SECCIONES (EXCEPTO INDEX)*/
+@mixin container_secciones_media768($tipo-display,$background-pic-seccion) {
+
+    display: $tipo-display;
+    width: 96%;
+    height: 650px;
+    margin: 70px auto 30px auto; /*70px para compensar header fiex*/
+    overflow: hidden;   
+    box-shadow: $boxshadow-tipo1;
+    /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
+    background-image: $background-pic-seccion;
+    /* Propiedades de Ubicacion de imagen de fondo de container 
+    background-size:80%;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px; */
+}
+
+
+@mixin estilo_boton_redondo_transparente(){
+
+    font-family: familia_questrial;
+    font-size: 40px;
+    font-weight:bolder;
+    color:white;
+    border-color: #FFFFFF;
+    border-style: double;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: auto;
+    overflow: hidden;
+    &:hover{
+    background-color: rgba(34, 9, 100, 0.733);
+    transform: scale(1.04);
+    box-shadow: $boxshadow-tipo2;
+    }
+}
+
+@mixin estilo_boton_rectangular_transparente{
+
+    height: 50px;
+    margin-left: 15px;
+    padding: 2px 32px 2px 32px;
+    font-family: familia_1;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border-style: double;
+    border-color: #FFFFFF;
+    overflow: hidden;
+    
+    &:hover{
+    background-color: rgba(34, 9, 100, 0.733);
+    transform: scale(1.04);
+    box-shadow: $boxshadow-tipo3;
+    }
+}
+
+

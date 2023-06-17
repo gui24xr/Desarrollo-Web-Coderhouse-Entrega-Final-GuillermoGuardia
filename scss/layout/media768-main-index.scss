@@ -1,0 +1,82 @@
+@media (max-width: 768px){
+
+    .index_container_ppal{
+            
+            @include container_main;
+
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+            background-size: 115%;
+            background-position-y: 55px;
+            
+            .spoty_container{
+        
+        
+                width: 90%;
+                height:120px;
+               
+                
+                
+                .spoty_1{
+
+                    width: 300px;
+                 
+                
+                }
+                
+                .spoty_2{
+                
+                    width: 300px;
+                   
+                    
+                }
+            }
+
+        }
+    }
+
+
+
+    @media (max-width: 414px){
+
+        .index_container_ppal{
+                
+             
+                height: 680px;
+                
+                flex-direction: column;
+                align-items: center;
+                justify-content:flex-end;
+           
+                background-size: 135%;
+                background-position-x: -115px;
+                background-position-y: 55px;
+
+            
+                .spoty_container{
+            
+                    flex-direction: column;
+                    width: 90%;
+                    height:300px;
+                   
+                    
+                    
+                    .spoty_1{
+    
+                        width: 300px;
+                     
+                    
+                    }
+                    
+                    .spoty_2{
+                    
+                        width: 300px;
+                       
+                        
+                    }
+                }
+    
+            }
+        }

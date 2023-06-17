@@ -1,0 +1,47 @@
+/* MEDIA 768 ---------------------------------*/
+
+
+@media (max-width: 768px){
+
+    .biografia_container{
+
+        margin-bottom: 0;
+        height: 880px;
+        background-position-x: -200px;
+        .contenedor_txt{
+            width: 45%;
+            margin-left: 0;
+        }
+
+
+    }
+
+
+       
+}
+
+
+/* MEDIA 414 ---------------------------------*/
+
+@media (max-width: 414px){
+
+    .biografia_container{
+        background-size:140%;
+        margin-bottom: 0;
+        height: 620px;
+        background-position-x: -80px;
+        .contenedor_txt{
+            width: 100%;
+            height: 55%;
+            margin-left: 0;
+        }
+
+
+    }
+
+
+       
+}
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "lcg-sass",
+  "version": "1.0.0",
+  "description": "Coderhouse segunda pre entrega Desarrollo Web Guillermo Guardia",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mdo": "^1.0.5",
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

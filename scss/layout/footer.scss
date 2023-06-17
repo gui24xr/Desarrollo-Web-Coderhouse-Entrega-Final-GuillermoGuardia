@@ -1,0 +1,185 @@
+.seccion_footer{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 422px; /* estp definelo azul*/
+    overflow: hidden;
+    background-color: $color-fondo-nav-bar;
+    
+    .menu_controls_footer{
+        
+        position: fixed; top: 690px;
+        display: flex; 
+        justify-content:space-around;
+        align-items:center;
+        width:  100%;
+        height:60px;
+        background-color: rgba(153, 149, 149, 0.4);-webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(3px);
+        margin: 0 0 0 0;
+        box-shadow: $boxshadow-tipo1;
+        
+        a{
+            background-color: transparent;
+            .icono_abajo{
+
+                width: 40px;
+                height: 40px;
+                background:none;
+                color: #FFFFFF;
+                
+            }
+        }
+
+
+        .noticias_toggle{
+
+           @include estilo_boton_rectangular_transparente;
+        }
+
+        .intro_toggle{
+
+            @include estilo_boton_rectangular_transparente;
+         }
+
+
+        .boton_activar_suscripcion{
+            
+            @include estilo_boton_rectangular_transparente;
+
+        }
+
+        .boton_activar_spoty{
+         
+            @include estilo_boton_redondo_transparente;
+            font: 30px;
+            
+           
+        }
+    }
+    
+    
+    
+    .div_suscripcion{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 72px;
+        background-color: $color-div-suscripcion;
+        box-shadow: $boxshadow-tipo1;
+        border-bottom: solid 1px #FFFFFF;
+        
+        p{
+            margin: 0 20px 0 0px;
+            background-color:transparent;
+            font-family: familia_barlow;
+            color: white;
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+        
+        .formulario_suscripcion{
+            
+        
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: transparent;
+            
+            input{
+                width: 250px;
+                height: 30px;
+                background-color: #FFFFFF;
+                box-shadow: $boxshadow-tipo1;
+            }
+            
+            .button_suscripcion{
+
+               
+                margin-left: 15px;
+                padding: 2px 32px 2px 32px;
+                font-family: familia_1;
+                font-size: 18px;
+                color: #FFFFFF;
+                background-color: transparent;
+                border-style: double;
+                border-color: #FFFFFF;
+                overflow: hidden;
+                
+                &:hover{
+                background-color: rgba(34, 9, 100, 0.733);
+                transform: scale(1.04);
+                box-shadow: $boxshadow-tipo3;
+                }
+            }
+        }
+
+        .link_contratacion{
+
+            display: flex;  
+            justify-content:flex-end;
+            background-color: transparent;
+            margin-left: 30px;
+            padding-left: 30px;
+            border-left: solid white;
+           
+                
+            a{                    
+                padding: 2px 32px 2px 32px;
+                font-family: familia_1;
+                font-size: 18px;
+                color: #FFFFFF;
+                background-color: transparent;
+                border-style: solid;
+                border-color: #FFFFFF;
+                overflow: hidden;
+                text-decoration: none;
+                    
+                &:hover{
+                    background-color: rgba(34, 9, 100, 0.733);
+                    transform: scale(1.04);
+                    box-shadow: $boxshadow-tipo3;
+                }
+            }
+            
+        }
+    }
+
+    
+    .informacion_pie{
+        
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        align-items:center;
+        
+        background-color: rgb(0, 0, 0); /*$color-fondo-nav-bar;*/
+        
+       
+   
+        .leyendas_pie{
+                
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            background-color: transparent;
+            p{
+                font-family: 'Courier New', Courier, monospace;
+                color: #FFFFFF;
+                background-color: transparent;
+                font-size:medium;
+            }
+        }
+        
+    }
+       
+
+}
+
+    
+   
+

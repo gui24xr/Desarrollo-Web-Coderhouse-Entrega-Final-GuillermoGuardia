@@ -1,0 +1,47 @@
+body { 
+    background-color: hsl(0, 2%, 32%); 
+
+}
+
+#barra_navegacion_superior {
+
+background-color: black;
+position: absolute;
+width: 1452px;
+height: 50px;
+left: 0px;
+top: 0px;
+
+}
+
+#barra_navegacion_superior ul {
+
+    list-style-type: none;
+    text-align: center;
+
+}
+    
+
+
+#barra_navegacion_superior ul li {
+    
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+
+    }
+
+#barra_navegacion_superior  li a {
+    
+    padding: 2px 7px 2px 7px;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    backdrop-filter: blur(2px);
+    text-decoration: none;
+    
+}

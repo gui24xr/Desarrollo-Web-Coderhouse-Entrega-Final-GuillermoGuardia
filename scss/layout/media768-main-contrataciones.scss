@@ -1,0 +1,50 @@
+
+@media (max-width: 768px){
+
+    .contrataciones_container{
+
+        margin-bottom: 0;
+        height: 880px;
+        background-position-x: -400px;
+        background-position-y: -70px;
+        flex-direction: column;
+        align-content: space-around;
+        justify-content: flex-end;
+
+        
+        .formulario_contacto{
+
+            width: 80%;
+            height: 90%;
+            background-color: $color-social-bar; 
+        }
+
+
+    }
+
+       
+}
+
+
+@media (max-width: 414px){
+
+    .contrataciones_container{
+        
+        background-size:280%;
+        margin-bottom: 0;
+        height: 620px;
+        background-position-x: -300px;
+       
+         
+            .formulario_contacto{
+
+                width: 80%;
+                height: 98%;
+                
+            }
+
+        }
+    }
+
+
+

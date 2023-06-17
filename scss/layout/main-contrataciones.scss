@@ -1,0 +1,112 @@
+.contrataciones_container{
+    @include container_secciones(flex,url("../imagenes/img_form_sucr.jpg"));
+    background-size:cover;
+    /*background-position:left;*/
+    background-repeat: no-repeat;
+    /*background-position-x: -100px;*/
+    background-position-x:right;
+    background-position-y:center;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    
+    
+    .formulario_contacto{
+ 
+            
+        width: 34%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items:flex-start;
+        background-color: rgba(5, 90, 55, 0.45); /* Color de fondo + transparencia de la division con rgba */
+        box-shadow: $boxshadow-tipo1;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content:end;
+            
+            width: 80%;
+            height: 90%;
+            background-color:transparent;
+            
+            li{
+                
+                display: flex;
+                flex-direction: column;
+                background-color:transparent;
+                
+                h2{
+                background-color:transparent;
+                margin: 0 0 50px 0;
+                font-family: familia_1;
+                color: #FFFFFF;
+                letter-spacing: 5px;
+                text-decoration: none;
+                }
+                
+                label{
+                    margin: 0 0 0px 0;
+                    background-color: transparent;
+                    overflow: hidden;
+                    font-family: familia_1;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+                }
+                input{
+                    width: 100%;
+                    height: 25px;
+                    margin: 0 0 10px 0;
+                    border-radius: 25px;
+                    border-style: none;
+                    background-color: #FFFFFF;
+                    font-family: familia_1;
+                    color: #000000;
+                    text-decoration: none;
+                    }
+                
+                    select{
+                    width: 100%;
+                    height: 25px;
+                    margin: 0 0 10px 0;
+                    border-radius: 25px;
+                    border-style: none;
+                    background-color: #FFFFFF;
+                    text-decoration: none;
+                    font-family: familia_1;
+                    color: #000000;
+                    
+                    option{
+                        background-color: #FFFFFF;
+                        border-radius: 25px;
+                        border-style: none;
+                        box-shadow: $boxshadow-tipo1;
+                        text-decoration: none;
+                        font-family: familia_1;
+                        color: #000000;
+                        }
+                    }   
+                .input_mensaje{
+                    height: 120px;
+                    padding: 0 0 0 5px;
+                    border-radius: 25px;
+                }
+                .boton_aceptar{
+                    width: 40%;
+                    height: 30px;
+                    /*margin: 40px 0 0px 0px;*/
+                    margin-top: 40px;
+                    align-self: center;
+                    
+                    border-radius: 25px;
+                    background-color: rgba(30, 78, 236, 0.55);
+                    box-shadow: $boxshadow-tipo1;
+                    font-family: familia_1;
+                    color: #f8f7f7;
+                    font-weight: bold;
+                }
+            }
+
+            }
+        }
+    }
