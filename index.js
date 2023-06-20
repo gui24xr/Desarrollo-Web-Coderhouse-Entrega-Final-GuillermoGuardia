@@ -114,3 +114,40 @@ function mi_funcion6(){
   //portadaNoticias.classList.remove("intro_visible_off");
   portadaNoticias.classList.toggle("noticias_visible");
 }
+
+//------------------------------------------------------------
+
+const contenedor_slider = document.querySelector(".container_slider");
+//const frame1 = document.querySelector(".frame1");
+
+var banners =[];
+let contador = 1;
+
+banners[1] = document.querySelector(".frame1");
+banners[2] = document.querySelector(".frame2");
+banners[3] = document.querySelector(".frame3");
+banners[4] = document.querySelector(".frame4");
+
+socialBar.addEventListener("click", carrusel);
+
+
+function carrusel(){
+
+  //frame1.classList.toggle("frame5");
+  
+
+//Aca le agrego la clase para mostrar al que quiero mostrar.
+banners[contador].classList.toggle("visibilizar_frame");
+
+contador += 1;
+
+// y a los otros div les tengo que quitar esa clase.
+/*var i; 
+for (i=0;i<=5;i++) { 
+   	if (i != contador){banners[contador].classList.remove("frame5");}
+} 
+*/
+if (contador > 4){ contador = 1;}
+
+}
+
