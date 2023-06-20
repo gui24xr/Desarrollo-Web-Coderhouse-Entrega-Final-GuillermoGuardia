@@ -18,24 +18,34 @@
         .logo-intro{
            
             background-color: transparent;
-            width: 120px; height: 140px;
+            width: 15vh; 
+            height: 23vh;
+            animation: animacion_logo_intro 3s ease 0s 1 normal backwards;
 
-            position: relative;
-            animation-name: ingreso_logo;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-          
+            @keyframes animacion_logo_intro {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-250px);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+            
+            
         }
         .intro-boton-start{
            
-            animation-name: example;
-            animation-duration: 5s;
+            animation: myAnim 4s ease 0s infinite normal forwards;
+            
             align-self: center;
             
            
             
             font-family: familia_barlow;
-            font-size: 24px;
+            font-size: 4vh;
             color: #FFFFFF;
             background-color: transparent;
             border: none;
@@ -47,20 +57,20 @@
         }
   
     }
-
-    @keyframes example {
-        0%   {background-color:red; left:0px; top:0px;}
-        25%  {background-color:yellow; left:200px; top:0px;}
-        50%  {background-color:blue; left:200px; top:200px;}
-        75%  {background-color:green; left:0px; top:200px;}
-        100% {background-color:red; left:0px; top:0px;}
-      }
-
-      @keyframes ingreso_logo {
-        100%   {left:50%; top:0px;}
-      
-      }
-
+    
+    @keyframes myAnim {
+        0%,
+        50%,
+        100% {
+            opacity: 1;
+        }
+    
+        25%,
+        75% {
+            opacity: 0;
+        }
+    }
+ 
       
 /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
     .header_nav_bar{
