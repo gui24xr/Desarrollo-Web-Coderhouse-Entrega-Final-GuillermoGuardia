@@ -1,37 +1,23 @@
 .header{
-   
-    
-    width: 100%; height: fit-content; background-color: $color-fondo-nav-bar;
-     flex-direction: column; justify-content: flex-start; align-items: flex-start;
-  
-   /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
+    width: 100%; 
+    height: fit-content; 
+/* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */
     .header_nav_bar{
-      
-        top: 0;
         width: 100%;
         display: flex; 
         justify-content:flex-start;
         align-items:center;
-        
-        height: 100px;/*$height-nav-bar;*/
-        background-color: transparent; /*$color-fondo-nav-bar; /*rgba(40, 37, 48, 0.733);$color-fondo-nav-bar;*/
+        height: $height-nav-bar;
+        background-color: $color-fondo-nav-bar; 
         box-shadow: $boxshadow-tipo1;
-        overflow: hidden;
-    
         .header_nav_logo1{
             align-self: stretch; 
             background-color:transparent;
             margin: 0px 30px 0px 40px;
             justify-self: flex-start;
             flex-grow: 0;
-
-            
-            
         }
-
-
         .header_nav_toggle{
-            
             display: none;
             color:white;
             font-size: 80px;
@@ -42,7 +28,6 @@
                 color: $color-fondo-nav-bar-media;
             }
         }
-
         .nav_lista_secciones_sitio{
             display: flex;
             height:100%;
@@ -52,14 +37,11 @@
             background-color:transparent;
             margin: 0px 20px 0px 0px;
             flex-grow: 1;
-           
-            
-            ul{
+           ul{
                 display: flex;
                 justify-content: space-around;
                 align-items:center;
                 background-color:transparent;
-                
                 li{
                     list-style-type:none;
                     padding: 30px 15px 30px 15px;
@@ -69,7 +51,6 @@
                         transform: scale(1.04);
                         box-shadow: $boxshadow-tipo3;
                     }
-                    
                     a{
                     width: max-content;
                     font: familia_1;
@@ -85,89 +66,15 @@
                 }   
             }
         }
-
         .header_nav_mxflag{
             /*flex-grow: 0.2;*/
             height: 40px; 
             background-color:transparent;
             margin: 0 20px 0 0;
             justify-self: flex-end;
-            
             flex-grow: 0;
-            
         }
     }
-
-    
-
-    .social_bar{
-
-
-        /*position: fixed;*/ width: 100%; padding: 10px 15px 10px 15px; height: fit-content;
-
-        /*left: $posicion-x-social-bar;
-        /*top: 40px;/*$posicion-y-social-bar;*/
-        transition: left 0.8s;
-        background-color: hsla(241, 75%, 39%, 0.35);   /*$color-fondo-nav-bar;/*$color-social-bar;*/
-        /*border-radius: 25px;*/
-        box-shadow: $boxshadow-tipo1;
-
-        
-        
-        nav{
-            background-color: transparent;
-            
-            ul{
-                display: flex;
-                /*flex-direction: column;*/
-                width: fit-content;
-                height: fit-content;
-                background-color: transparent;
-                text-decoration: none;
-                /*padding: 5px 5px 5px 5px;*/
-               
-
-                li{
-                    list-style-type:none;
-                    background-color:transparent;
-                    
-                    a{
-                        background-color:transparent;
-                        
-                        img{
-                            background-color: transparent;
-                            width: $alto-iconos-social-bar;
-                            height: $ancho-iconos-social-bar;
-                           &:hover{
-                                background-blend-mode:soft-light;
-                                transform: scale(1.3);
-                            }
-                            
-                        }
-
-                    } 
-                }
-            }
-        }
-
-        .boton_activar_social_bar{
-         
-            @include estilo_boton_redondo_transparente;
-            position: fixed;
-            top: 600px;
-            left: 96%;
-           
-        }
-
-    }
-
-    
-    .social_bar_visible{
-
-       left: 100%;
-    }
-
-
 
 }
     

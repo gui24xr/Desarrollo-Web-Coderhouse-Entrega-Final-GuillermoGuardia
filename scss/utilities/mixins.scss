@@ -20,7 +20,7 @@
     display: $tipo-display;
     width: 96%;
     height: 650px;
-    margin: 70px auto 30px auto; /*70px para compensar header fiex*/
+    
     overflow: hidden;   
     box-shadow: $boxshadow-tipo1;
     /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
@@ -39,7 +39,7 @@
     display: grid;
     width: 92%;
     height: 600px;
-    margin: 70px 0px 30px 50px; /*70px para compensar header fiex*/
+    
     overflow: hidden;   
     box-shadow: $boxshadow-tipo1;
     /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */

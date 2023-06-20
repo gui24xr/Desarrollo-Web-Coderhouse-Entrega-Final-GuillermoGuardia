@@ -1,6 +1,6 @@
 
 /*VARIBLES GENERALES SITIO */
-$color-fondo-sitio: rgb(61, 61, 61);
+$color-fondo-sitio: rgb(255, 255, 255);
 $height-header: 70px;
 
 $boxshadow-tipo1: -32px 22px 15px 0px rgba(0,0,0,0.1),
@@ -21,7 +21,7 @@ inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
 $height-nav-bar: 70px;
 $ancho-nav-bar-media768:90px;
 $ancho-nav-bar-media576:90px;
-$color-fondo-nav-bar: hsla(241, 75%, 39%, 0.65);  /*rgb(49, 44, 44);*/
+$color-fondo-nav-bar: hsla(241, 75%, 39%, 1);  /*rgb(49, 44, 44);*/
 $color-fondo-nav-bar-hover: hsla(240, 5%, 61%, 0.65);
 $color-fondo-nav-bar-media: hsla(240, 5%, 61%, 0.65);
 $color-social-bar:  rgba(248, 248, 248, 0.3);/*hsla(241, 75%, 39%, 0.45);  hsla(241, 75%, 39%, 0.45);*/
