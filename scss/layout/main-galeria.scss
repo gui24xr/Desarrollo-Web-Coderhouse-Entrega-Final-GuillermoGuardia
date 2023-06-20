@@ -110,25 +110,17 @@
         }
         .galeria-videos-wraper{
             display: grid;
-            padding: 70px 30px 30px 30px;
+            height: auto;
             width: 90%;
-            height: min-content;
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-            grid-auto-rows: minmax(280px, auto);
-            gap: 32px;
-            min-height: 430px;
+            padding: 70px 20px 70px 20px;
+            background-color: rgb(255, 255, 255);
             box-shadow: $boxshadow-tipo3;
-            .grid-item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: #bfc9ce;
-                border-radius: 4px;
-                transition: transform 0.3s ease-in-out;
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);-webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            justify-items: center;
+            gap: 10px;
+            .video-prev {
+                width: 280px;
+                height: 190px;
                 &:hover{
                     background-blend-mode:soft-light;
                     transform: scale(1.1);

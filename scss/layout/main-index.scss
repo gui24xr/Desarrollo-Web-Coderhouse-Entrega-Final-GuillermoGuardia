@@ -231,7 +231,8 @@
         display: grid;
         height: auto;
         width: 90%;
-        padding: 70px 20px 70px 20px; background-color: rgb(255, 255, 255);
+        padding: 70px 20px 70px 20px; 
+        background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;
         grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         justify-items: center;
