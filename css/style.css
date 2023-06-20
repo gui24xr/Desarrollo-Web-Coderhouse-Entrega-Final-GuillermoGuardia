@@ -8,11 +8,6 @@
   box-sizing: border-box;
   background-color: #3d3d3d; }
 
-body {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; }
-
 @font-face {
   font-family: familia_1;
   src: url("../fonts/Staatliches-Regular.ttf"); }
@@ -203,6 +198,74 @@ body {
     text-shadow: 4px 4px 21px rgba(255, 255, 255, 0.7);
     margin-bottom: 30px; }
 
+.section-portada-noticias {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content; }
+  .section-portada-noticias .titulo-noticias-portada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    min-height: 100px;
+    background-color: #035a40; }
+    .section-portada-noticias .titulo-noticias-portada P {
+      padding-left: 10px;
+      background-color: transparent;
+      font-family: familia_barlow;
+      font-size: 26px;
+      font-weight: bolder;
+      color: white;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+  .section-portada-noticias .wraper-noticias-portada {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    padding: 70px 20px 70px 20px;
+    background-color: white;
+    height: fit-content; }
+    .section-portada-noticias .wraper-noticias-portada .img-noticia-portada {
+      width: 25%;
+      height: 300px;
+      background-image: url("/imagenes/img_portada_noticias.jpg");
+      background-size: cover;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+      .section-portada-noticias .wraper-noticias-portada .img-noticia-portada:hover {
+        transform: scale(1.1); }
+    .section-portada-noticias .wraper-noticias-portada .portada-noticia-texto {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-around;
+      width: 65%;
+      height: fit-content;
+      padding: 30px 30px 20px 30px;
+      background-color: #da0c0c;
+      transform: skew(-8deg);
+      -webkit-transform: skew(-8deg);
+      -moz-transform: skew(-8deg);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+      .section-portada-noticias .wraper-noticias-portada .portada-noticia-texto:hover {
+        transform: scale(1.1); }
+      .section-portada-noticias .wraper-noticias-portada .portada-noticia-texto .titulo-noticia-portada {
+        font-family: familia_barlow;
+        font-size: 24px;
+        color: #fff4f4;
+        background-color: transparent; }
+      .section-portada-noticias .wraper-noticias-portada .portada-noticia-texto .texto-noticia-portada {
+        padding-top: 40px;
+        font-family: familia_barlow;
+        font-size: 18px;
+        color: #fafafa;
+        height: fit-content;
+        background-color: transparent; }
+
 .section-prox-shows {
   display: flex;
   flex-direction: row;
@@ -215,13 +278,14 @@ body {
     align-items: center;
     width: 10%;
     min-height: 100px;
-    background-color: #bb1e1e; }
+    background-color: white; }
     .section-prox-shows .titulo_prox_shows P {
+      padding-left: 10px;
       background-color: transparent;
       font-family: familia_barlow;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bolder;
-      color: white;
+      color: red;
       text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
   .section-prox-shows .grid-prox-shows {
     display: grid;
@@ -288,6 +352,8 @@ body {
         box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99);
         -webkit-box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99);
         -moz-box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99); }
+        .section-prox-shows .grid-prox-shows .flyer-concierto a:hover {
+          background-color: #05632c; }
 
 .section-spotys {
   display: flex;
@@ -301,8 +367,9 @@ body {
     align-items: center;
     width: 10%;
     min-height: 100px;
-    background-color: #035a40; }
+    background-color: #bb1e1e; }
     .section-spotys .titulo_spotys P {
+      padding-left: 10px;
       background-color: transparent;
       font-family: familia_barlow;
       font-size: 26px;
@@ -910,8 +977,8 @@ footer {
     align-items: center;
     width: 100%;
     min-height: 70px;
-    height: fit-content;
-    background-color: #05632c; }
+    height: max-content;
+    background-color: #035a40; }
     .seccion_footer .footer_social_bar P {
       background-color: transparent;
       font-family: familia_barlow;
