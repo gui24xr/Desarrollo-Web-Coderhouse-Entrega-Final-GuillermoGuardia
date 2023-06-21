@@ -41,8 +41,6 @@
 /* CONTENEDOR UTILIZADO PARA CONTENER INFORMACION EN ALGUNAS SECCIONES COMO BIOGRAFIA Y TOUR */
 /* CONTENEDOR DE LOS MAIN DE SECCIONES (EXCEPTO INDEX)*/
 .header {
-  width: 100%;
-  height: fit-content;
   /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */ }
   .header .intro-sitio {
     width: 100%;
