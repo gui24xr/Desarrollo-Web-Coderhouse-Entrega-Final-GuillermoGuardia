@@ -59,6 +59,7 @@
       background-color: transparent;
       width: 15vh;
       height: 23vh;
+      filter: drop-shadow(5px 5px 10px #FFFAFA);
       animation: animacion_logo_intro 3s ease 0s 1 normal backwards; }
 
 @keyframes animacion_logo_intro {
@@ -101,7 +102,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 10vh;
+    height: 70px;
     background-color: #1b19ae;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .header .header_nav_bar .header_nav_logo1 {
@@ -196,28 +197,30 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    min-height: 100px;
-    background-color: #035a40; }
+    width: 5%;
+    min-height: 300px;
+    background-color: #035a40;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
     .section-portada-noticias .titulo-noticias-portada a {
-      padding-left: 10px;
       background-color: transparent;
-      font-family: familia_barlow;
-      font-size: 26px;
-      font-weight: bolder;
-      color: white;
-      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68);
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
       .section-portada-noticias .titulo-noticias-portada a:hover {
         transform: scale(1.1); }
   .section-portada-noticias .wraper-noticias-portada {
     display: grid;
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     gap: 40px; }
     .section-portada-noticias .wraper-noticias-portada .portada-noticia-card {
@@ -225,23 +228,24 @@
       display: flex;
       flex-direction: column;
       height: max-content;
-      padding: 20px 10px 20px 10px;
+      padding: 20px 20px 20px 20px;
       overflow-y: scroll;
-      background-color: #da0c0c;
+      background-color: #b4a4a4;
       box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
       .section-portada-noticias .wraper-noticias-portada .portada-noticia-card:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        cursor: pointer; }
       .section-portada-noticias .wraper-noticias-portada .portada-noticia-card .titulo-noticia-card {
-        font-family: familia_barlow;
-        font-size: 24px;
-        color: #fff4f4;
+        font-family: familia_3;
+        font-size: 18px;
+        color: black;
         background-color: transparent; }
       .section-portada-noticias .wraper-noticias-portada .portada-noticia-card .texto-noticia-card {
         padding-top: 40px;
-        font-family: familia_barlow;
-        font-size: 2.5vh;
+        font-family: familia_;
+        font-size: 16px;
         color: #fafafa;
         overflow: hidden;
         background-color: transparent; }
@@ -254,26 +258,28 @@
   .section-prox-shows .titulo_prox_shows {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    width: 10%;
-    min-height: 100px;
-    background-color: white; }
+    width: 5%;
+    min-height: 300px;
+    background-color: white;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
     .section-prox-shows .titulo_prox_shows a {
-      padding-left: 10px;
       background-color: transparent;
-      font-family: familia_barlow;
-      font-size: 26px;
-      font-weight: bolder;
-      color: red;
-      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68);
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
       .section-prox-shows .titulo_prox_shows a:hover {
         transform: scale(1.1); }
   .section-prox-shows .grid-prox-shows {
     display: grid;
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -285,8 +291,8 @@
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      width: 100%;
-      height: 300px;
+      width: 80%;
+      height: 200px;
       background-image: url("../imagenes/img_portada_tour.jpg");
       background-size: cover;
       box-shadow: 9px 9px 0px -2px rgba(0, 0, 0, 0.56);
@@ -348,24 +354,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    min-height: 100px;
-    background-color: #bb1e1e; }
+    width: 5%;
+    min-height: 300px;
+    background-color: #bb1e1e;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
     .section-spotys .titulo_spotys a {
-      padding-left: 10px;
       background-color: transparent;
-      font-family: familia_barlow;
-      font-size: 26px;
-      font-weight: bolder;
-      color: white;
-      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68);
-      text-decoration: none; }
+      text-decoration: none;
+      color: white; }
       .section-spotys .titulo_spotys a:hover {
         transform: scale(1.1); }
   .section-spotys .grid-spotys {
     display: grid;
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -386,14 +394,22 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    min-height: 100px;
+    width: 5%;
+    min-height: 300px;
     background-color: #bb1e1e;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
     color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
+    .section-bio .section-name-bio a {
+      background-color: transparent;
+      text-decoration: none;
+      color: none; }
+      .section-bio .section-name-bio a:hover {
+        transform: scale(1.1); }
   .section-bio .biografia_container {
     display: flex;
     width: 96%;
@@ -407,7 +423,7 @@
     background-position:left;
     background-repeat: no-repeat;
     background-position-x: -100px; */
-    width: 85%;
+    width: 95%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0;
@@ -443,238 +459,48 @@
         color: white;
         font-family: familia_3; }
 
-.section-bio-grid {
-  display: flex;
-  margin-top: 60px; }
-  .section-bio-grid .section-name-bio-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    background-color: #948dad;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
-  .section-bio-grid .biografia-container-grid {
-    width: 90%;
-    min-height: 450px;
-    height: min-content;
-    background-color: #4300fa;
-    display: grid;
-    grid-template-columns: repeat 3, 1fr;
-    grid-template-rows: repeat 3, 1fr;
-    grid-template-areas: "header   header   header" "main aside aside" "footer   footer   footer"; }
-    .section-bio-grid .biografia-container-grid .div1a {
-      grid-area: header;
-      background-color: cadetblue; }
-    .section-bio-grid .biografia-container-grid .div2a {
-      grid-area: main;
-      background-color: #a05f85; }
-    .section-bio-grid .biografia-container-grid .div3a {
-      grid-area: footer;
-      background-color: #eeff00; }
-    .section-bio-grid .biografia-container-grid .div4a {
-      grid-area: aside;
-      background-color: #ff00bf; }
-
-.section-bio-grid2 {
-  display: flex;
-  margin-top: 60px; }
-  .section-bio-grid2 .section-name-bio-grid2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    background-color: #9aad8d;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
-  .section-bio-grid2 .biografia-container-grid2 {
-    width: 90%;
-    min-height: 650px;
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat 6, 1fr;
-    grid-template-rows: repeat 6, 1fr; }
-    .section-bio-grid2 .biografia-container-grid2 .contenedor_txt2 {
-      grid-column: 1/4;
-      grid-row: 1/5;
-      background-color: green;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
-      .section-bio-grid2 .biografia-container-grid2 .contenedor_txt2 h1 {
-        background-color: transparent; }
-      .section-bio-grid2 .biografia-container-grid2 .contenedor_txt2 p {
-        background-color: transparent; }
-    .section-bio-grid2 .biografia-container-grid2 .pic-bio {
-      grid-column: 2/6; }
-
-.contrataciones_container {
-  display: flex;
-  width: 96%;
-  height: 650px;
-  overflow: hidden;
-  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
-  background-image: url("../imagenes/img_form_sucr.jpg");
-  /* Propiedades de Ubicacion de imagen de fondo de container 
-    background-size:80%;
-    background-position:left;
-    background-repeat: no-repeat;
-    background-position-x: -100px; */
-  background-size: cover;
-  /*background-position:left;*/
-  background-repeat: no-repeat;
-  /*background-position-x: -100px;*/
-  background-position-x: right;
-  background-position-y: center;
-  flex-wrap: wrap;
-  justify-content: flex-start; }
-  .contrataciones_container .formulario_contacto {
-    width: 34%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: rgba(5, 90, 55, 0.45);
-    /* Color de fondo + transparencia de la division con rgba */
-    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-    .contrataciones_container .formulario_contacto ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      width: 80%;
-      height: 90%;
-      background-color: transparent; }
-      .contrataciones_container .formulario_contacto ul li {
-        display: flex;
-        flex-direction: column;
-        background-color: transparent; }
-        .contrataciones_container .formulario_contacto ul li h2 {
-          background-color: transparent;
-          margin: 0 0 50px 0;
-          font-family: familia_1;
-          color: #FFFFFF;
-          letter-spacing: 5px;
-          text-decoration: none; }
-        .contrataciones_container .formulario_contacto ul li label {
-          margin: 0 0 0px 0;
-          background-color: transparent;
-          overflow: hidden;
-          font-family: familia_1;
-          letter-spacing: 2px;
-          color: #FFFFFF; }
-        .contrataciones_container .formulario_contacto ul li input {
-          width: 100%;
-          height: 25px;
-          margin: 0 0 10px 0;
-          border-radius: 25px;
-          border-style: none;
-          background-color: #FFFFFF;
-          font-family: familia_1;
-          color: #000000;
-          text-decoration: none; }
-        .contrataciones_container .formulario_contacto ul li select {
-          width: 100%;
-          height: 25px;
-          margin: 0 0 10px 0;
-          border-radius: 25px;
-          border-style: none;
-          background-color: #FFFFFF;
-          text-decoration: none;
-          font-family: familia_1;
-          color: #000000; }
-          .contrataciones_container .formulario_contacto ul li select option {
-            background-color: #FFFFFF;
-            border-radius: 25px;
-            border-style: none;
-            box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-            text-decoration: none;
-            font-family: familia_1;
-            color: #000000; }
-        .contrataciones_container .formulario_contacto ul li .input_mensaje {
-          height: 120px;
-          padding: 0 0 0 5px;
-          border-radius: 25px; }
-        .contrataciones_container .formulario_contacto ul li .boton_aceptar {
-          width: 40%;
-          height: 30px;
-          /*margin: 40px 0 0px 0px;*/
-          margin-top: 40px;
-          align-self: center;
-          border-radius: 25px;
-          background-color: rgba(30, 78, 236, 0.55);
-          box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-          font-family: familia_1;
-          color: #f8f7f7;
-          font-weight: bold; }
-
-.section-contrataciones-banner {
-  display: flex;
-  flex-wrap: wrap; }
-  .section-contrataciones-banner .contrataciones-banner-titulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    min-height: 100px;
-    background-color: #035a40;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
-  .section-contrataciones-banner .contrataciones-wraper-banner {
-    width: 90%;
-    min-height: 250px;
-    max-height: 350px;
-    display: flex;
-    overflow: hidden; }
-    .section-contrataciones-banner .contrataciones-wraper-banner img {
-      width: 100%;
-      height: 200%; }
-
 .section-contacto {
   display: flex;
-  margin-bottom: 10vh; }
+  margin-bottom: 15vh; }
   .section-contacto .section-name-contacto {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    min-height: 100px;
+    width: 5%;
+    min-height: 300px;
     background-color: #035a40;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
     color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
+    .section-contacto .section-name-contacto a {
+      background-color: transparent;
+      text-decoration: none;
+      color: white; }
+      .section-contacto .section-name-contacto a:hover {
+        transform: scale(1.1); }
   .section-contacto .contrataciones-contenido {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
-    width: 85%;
+    width: 95%;
     background-image: url("../imagenes/img_form_sucr.jpg");
     margin-left: 30px;
     margin-top: 2vh;
-    margin-bottom: 4vh;
     box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     background-size: contain;
     background-position-x: calc(40% + 10x); }
     .section-contacto .contrataciones-contenido .form-contacto {
-      width: 35%;
+      width: 38%;
       height: 100%;
-      padding: 30px 30px 30px 30px;
-      background-color: rgba(236, 0, 0, 0.618);
+      padding: 30px 60px 30px 60px;
+      background-color: rgba(226, 216, 216, 0.618);
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -682,11 +508,14 @@
       font-family: familia_questrial;
       font-size: 2vh;
       color: white;
-      font-weight: bolder; }
+      font-weight: bolder;
+      box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      overflow: hidden; }
       .section-contacto .contrataciones-contenido .form-contacto .titulo-form {
         font-size: 2.5vh; }
       .section-contacto .contrataciones-contenido .form-contacto .fila-form {
         display: flex;
+        overflow: hidden;
         flex-direction: column;
         background-color: transparent;
         list-style-type: none; }
@@ -696,163 +525,103 @@
           border: 1px solid black;
           border-radius: 10px;
           height: 30px;
-          min-width: 200px;
           box-shadow: 5px 5px 10px 1px #000; }
         .section-contacto .contrataciones-contenido .form-contacto .fila-form select {
-          min-width: 300px;
           height: 45px;
           box-shadow: 5px 5px 10px 1px #000; }
         .section-contacto .contrataciones-contenido .form-contacto .fila-form .textarea {
           border-radius: 10px;
           padding: 1vh;
-          min-width: 300px;
           box-shadow: 5px 5px 10px 1px #000; }
       .section-contacto .contrataciones-contenido .form-contacto .boton_aceptar {
-        height: 50px;
-        margin-left: 15px;
-        padding: 2px 32px 2px 32px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        min-height: 30px;
+        padding: 2px 30px 2px 30px;
         font-family: familia_1;
         font-size: 18px;
         color: #FFFFFF;
         background-color: transparent;
-        border-style: double;
+        border-style: solid;
         border-color: #FFFFFF;
         overflow: hidden;
         width: 35%;
         align-self: center;
         box-shadow: 5px 5px 10px 1px #000; }
         .section-contacto .contrataciones-contenido .form-contacto .boton_aceptar:hover {
+          cursor: pointer;
           background-color: rgba(34, 9, 100, 0.733);
           transform: scale(1.04);
           box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
-.seccion_conciertos_container {
+.section-management {
   display: flex;
-  width: 96%;
-  height: 650px;
-  overflow: hidden;
-  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
-  background-image: url("../imagenes/img_portada_tour.jpg");
-  /* Propiedades de Ubicacion de imagen de fondo de container 
-    background-size:80%;
-    background-position:left;
-    background-repeat: no-repeat;
-    background-position-x: -100px; */
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  /*background-position-x: 0px;
-    background-position-y: -40px;*/
-  justify-content: flex-end;
   box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-  .seccion_conciertos_container .container_fechas_tour {
+  .section-management .titulo-management {
     display: flex;
-    flex-direction: row;
-    width: 20%;
-    height: 100%;
-    background-color: rgba(5, 90, 55, 0.85);
-    overflow: hidden;
-    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-    overflow-y: scroll;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0; }
-    .seccion_conciertos_container .container_fechas_tour .concierto_box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 200px;
-      height: 220px;
-      margin: 25px 0 0 25px;
-      padding: 20px 0 0 0;
-      overflow: hidden;
-      box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box:hover {
-        background-color: rgba(34, 9, 100, 0.733);
-        filter: opacity(0.9);
-        transform: scale(1.04);
-        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box h2 {
-        background-color: transparent;
-        color: white;
-        font-family: familia_barlow;
-        font-size: 18px;
-        letter-spacing: 4px;
-        font-weight: bolder; }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box .flag_tourdate {
-        width: 40px;
-        height: 40px;
-        margin: 20px  0 0PX 0;
-        background: none;
-        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box h3 {
-        margin: 0px  0 0PX 0;
-        background-color: transparent;
-        font: familia_1;
-        color: white;
-        font-family: familia_barlow;
-        font-size: 18px;
-        letter-spacing: 4px; }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box h4 {
-        background-color: transparent;
-        font: familia_1;
-        color: white;
-        font-family: familia_barlow;
-        font-size: 16px;
-        font-weight: lighter;
-        letter-spacing: 2px; }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box h5 {
-        background-color: transparent;
-        font: familia_1;
-        color: white;
-        font-family: familia_barlow;
-        font-size: 16px;
-        font-weight: lighter; }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box a {
-        margin: 20px 0 0 0;
-        padding: 1px 15px 1px 15px;
-        background-color: rgba(248, 53, 27, 0.836);
-        box-shadow: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1), 28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-        text-decoration: none;
-        color: white;
-        font-family: familia_barlow;
-        font-size: 16px;
-        font-weight: lighter; }
-        .seccion_conciertos_container .container_fechas_tour .concierto_box a:hover {
-          background-color: rgba(50, 117, 11, 0.733); }
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    min-height: 300px;
+    background-color: #bb1e1e;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
+    .section-management .titulo-management a {
+      background-color: transparent;
+      text-decoration: none;
+      color: white; }
+      .section-management .titulo-management a:hover {
+        transform: scale(1.1); }
+  .section-management .container-management {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 95%;
+    min-height: 40vh; }
+    .section-management .container-management p {
+      font-family: familia_barlow;
+      font-size: 3.5vh;
+      margin-left: 30px;
+      margin-top: 50px; }
 
 .section-conciertos {
   display: flex; }
   .section-conciertos .section-name-conciertos {
-    width: 10%;
+    width: 5%;
     display: flex;
     flex-direction: column;
     height: auto; }
     .section-conciertos .section-name-conciertos .colorflag1 {
       background-color: #035a40;
       width: 100%;
-      height: 33.3%; }
-  .section-conciertos .colorflag2 {
-    background-color: white;
-    width: 100%;
-    height: 33.3%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
-    color: black;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
-  .section-conciertos .colorflag3 {
-    background-color: #bb1e1e;
-    width: 100%;
-    height: 33.3%; }
+      height: 25%; }
+    .section-conciertos .section-name-conciertos .colorflag2 {
+      background-color: white;
+      width: 100%;
+      height: 50%;
+      line-height: center;
+      font-family: familia_3;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 3vh;
+      color: black;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+      text-decoration: none; }
+    .section-conciertos .section-name-conciertos .colorflag3 {
+      background-color: #bb1e1e;
+      width: 100%;
+      height: 25%; }
   .section-conciertos .conciertos-contenido {
     display: grid;
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -917,44 +686,6 @@
         .section-conciertos .conciertos-contenido .flyer-concierto a:hover {
           background-color: #05632c; }
 
-.galeria_imagenes_container {
-  display: grid;
-  width: 96%;
-  height: 650px;
-  overflow: hidden;
-  box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* Medidas y posicion de imagen de fondo iran en cada apartado de cada seccion */
-  background-image: none;
-  /* Propiedades de Ubicacion de imagen de fondo de container 
-    background-size:80%;
-    background-position:left;
-    background-repeat: no-repeat;
-    background-position-x: -100px; */
-  height: min-content;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  grid-auto-rows: minmax(320px, auto);
-  gap: 15px; }
-  .galeria_imagenes_container .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #bfc9ce;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-    .galeria_imagenes_container .grid-item:hover {
-      /*ilter: opacity(0.9);*/
-      background-blend-mode: soft-light;
-      transform: scale(1.1);
-      box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-      border-radius: 0px 0px 139px 0px;
-      -moz-border-radius: 0px 0px 139px 0px;
-      -webkit-border-radius: 0px 0px 139px 0px;
-      border: 0px solid #000000; }
-
 .galeria-pics {
   display: flex; }
   .galeria-pics .galeria-pics-titulo {
@@ -962,18 +693,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 5%;
     min-height: 300px;
     background-color: #035a40;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
     color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
+    .galeria-pics .galeria-pics-titulo a {
+      background-color: transparent;
+      text-decoration: none;
+      color: white; }
+      .galeria-pics .galeria-pics-titulo a:hover {
+        transform: scale(1.1); }
   .galeria-pics .galeria-pics-wraper {
     display: grid;
     padding: 70px 30px 30px 30px;
-    width: 90%;
+    width: 95%;
     height: min-content;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     grid-auto-rows: minmax(280px, auto);
@@ -994,6 +733,7 @@
       -webkit-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 0.75); }
       .galeria-pics .galeria-pics-wraper .grid-item:hover {
+        cursor: pointer;
         background-blend-mode: soft-light;
         transform: scale(1.1);
         box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -1009,18 +749,26 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 10%;
+    width: 5%;
     min-height: 300px;
-    background-color: #f71313;
-    font-family: familia_barlow;
-    font-size: 26px;
-    font-weight: bolder;
+    background-color: #bb1e1e;
+    font-family: familia_3;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3vh;
     color: white;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+    text-decoration: none; }
+    .galeria-videos .galeria-videos-titulo a {
+      background-color: transparent;
+      text-decoration: none;
+      color: white; }
+      .galeria-videos .galeria-videos-titulo a:hover {
+        transform: scale(1.1); }
   .galeria-videos .galeria-videos-wraper {
     display: grid;
     height: auto;
-    width: 90%;
+    width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -1031,6 +779,7 @@
       width: 280px;
       height: 190px; }
       .galeria-videos .galeria-videos-wraper .video-prev:hover {
+        cursor: pointer;
         background-blend-mode: soft-light;
         transform: scale(1.1);
         box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -1038,6 +787,83 @@
         -moz-border-radius: 0px 0px 139px 0px;
         -webkit-border-radius: 0px 0px 139px 0px;
         border: 0px solid #000000; }
+
+.section-musica {
+  display: flex; }
+  .section-musica .section-titulo-musica {
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .section-musica .section-titulo-musica .colorflag1 {
+      background-color: #035a40;
+      width: 100%;
+      height: 25%; }
+    .section-musica .section-titulo-musica .colorflag2 {
+      background-color: white;
+      width: 100%;
+      height: 50%;
+      line-height: center;
+      font-family: familia_3;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-size: 3vh;
+      color: black;
+      text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
+      text-decoration: none; }
+    .section-musica .section-titulo-musica .colorflag3 {
+      background-color: #bb1e1e;
+      width: 100%;
+      height: 25%; }
+  .section-musica .wraper-musica {
+    display: flex;
+    height: auto;
+    width: 95%;
+    padding: 70px 20px 70px 20px;
+    background-color: white;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+  .section-musica .list-files-lcg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 40px 40px 40px 40px;
+    gap: 50px;
+    box-shadow: 10px 13px 36px 1px #000;
+    background-color: #0099ff; }
+    .section-musica .list-files-lcg li {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      background-color: transparent; }
+      .section-musica .list-files-lcg li img {
+        width: 180px;
+        height: 180px;
+        box-shadow: 5px 7px 10px 1px #000; }
+        .section-musica .list-files-lcg li img:hover {
+          transform: scale(1.2);
+          opacity: 0.8;
+          cursor: pointer; }
+      .section-musica .list-files-lcg li .data-music {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-color: transparent; }
+        .section-musica .list-files-lcg li .data-music p {
+          background-color: transparent;
+          font: familia_barlow;
+          font-size: 24px;
+          font-weight: bolder;
+          letter-spacing: 4px;
+          color: white; }
+        .section-musica .list-files-lcg li .data-music audio {
+          background-color: transparent; }
 
 .portada_intro {
   position: fixed;
@@ -1218,15 +1044,21 @@
         height: 30px;
         background-color: #FFFFFF; }
       .seccion_footer .div_suscripcion .formulario_suscripcion .button_suscripcion {
-        padding: 2px 32px 2px 32px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        min-height: 30px;
+        padding: 2px 30px 2px 30px;
         font-family: familia_1;
         font-size: 18px;
         color: #FFFFFF;
         background-color: transparent;
-        border-style: double;
+        border-style: solid;
         border-color: #FFFFFF;
-        overflow: hidden; }
+        overflow: hidden;
+        margin-right: 30px; }
         .seccion_footer .div_suscripcion .formulario_suscripcion .button_suscripcion:hover {
+          cursor: pointer;
           background-color: rgba(34, 9, 100, 0.733);
           transform: scale(1.04);
           box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
@@ -1234,11 +1066,14 @@
       display: flex;
       justify-content: flex-end;
       background-color: transparent;
-      margin-left: 30px;
       padding-left: 30px;
       border-left: solid white; }
       .seccion_footer .div_suscripcion .link_contratacion a {
-        padding: 2px 32px 2px 32px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        min-height: 30px;
+        padding: 2px 30px 2px 30px;
         font-family: familia_1;
         font-size: 18px;
         color: #FFFFFF;
@@ -1248,6 +1083,7 @@
         overflow: hidden;
         text-decoration: none; }
         .seccion_footer .div_suscripcion .link_contratacion a:hover {
+          cursor: pointer;
           background-color: rgba(34, 9, 100, 0.733);
           transform: scale(1.04);
           box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
@@ -1281,7 +1117,7 @@
       order: 2;
       margin: 0 0px 0 0px;
       align-self: stretch;
-      width: 10vh;
+      width: 70px;
       height: 100px; }
     .header .header_nav_bar .header_nav_toggle {
       order: 3;

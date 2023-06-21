@@ -87,46 +87,22 @@
                 width: 250px;
                 height: 30px;
                 background-color: #FFFFFF;
-                
             }
             .button_suscripcion{
-                padding: 2px 32px 2px 32px;
-                font-family: familia_1;
-                font-size: 18px;
-                color: #FFFFFF;
-                background-color: transparent;
-                border-style: double;
-                border-color: #FFFFFF;
-                overflow: hidden;
-                &:hover{
-                background-color: rgba(34, 9, 100, 0.733);
-                transform: scale(1.04);
-                box-shadow: $boxshadow-tipo3;
-                }
+               @include estilo_boton_rectangular_transparente;
+               margin-right: 30px;
             }
         }
         .link_contratacion{
             display: flex;  
             justify-content:flex-end;
             background-color: transparent;
-            margin-left: 30px;
+           
             padding-left: 30px;
             border-left: solid white;
            a{                    
-                padding: 2px 32px 2px 32px;
-                font-family: familia_1;
-                font-size: 18px;
-                color: #FFFFFF;
-                background-color: transparent;
-                border-style: solid;
-                border-color: #FFFFFF;
-                overflow: hidden;
-                text-decoration: none;
-                &:hover{
-                    background-color: rgba(34, 9, 100, 0.733);
-                    transform: scale(1.04);
-                    box-shadow: $boxshadow-tipo3;
-                }
+              @include estilo_boton_rectangular_transparente;
+              text-decoration: none;
             }
         }
     }

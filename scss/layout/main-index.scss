@@ -31,34 +31,15 @@
     width: 100%;
     height: fit-content;
     .titulo-noticias-portada{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        min-height: 100px;
-        background-color: rgb(3, 90, 64);
-        a{
-            padding-left: 10px;
-            background-color:transparent;
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: rgb(255, 255, 255);
-            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
-            text-decoration: none;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
+         @include box-nombre-seccion($color-verde-mexico-flag,white,white)
     }
     .wraper-noticias-portada{
         display: grid;
         height: auto;
-        width: 90%;
+        width: $ancho-container-secciones;
         padding: 70px 20px 70px 20px; background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;
-        grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
         justify-items: center;
         gap: 40px;
         .portada-noticia-card{
@@ -66,23 +47,24 @@
             display: flex;
             flex-direction: column;
             height: max-content;
-            padding: 20px 10px 20px 10px;
+            padding: 20px 20px 20px 20px;
             overflow-y: scroll;
-            background-color: rgb(218, 12, 12);
+            background-color: rgb(180, 164, 164);
             box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
             &:hover{
                 transform: scale(1.1);
+                cursor: pointer;
             }
             .titulo-noticia-card{
-                font-family: familia_barlow;
-                font-size: 24px;
-                color: rgb(255, 244, 244);
+                font-family: familia_3;
+                font-size: 18px;
+                color: rgb(0, 0, 0);
                 background-color: transparent;
             }
             .texto-noticia-card{
             padding-top: 40px;
-            font-family: familia_barlow;
-            font-size: 2.5vh;
+            font-family: familia_;
+            font-size: 16px;
             color: rgb(250, 250, 250);
             overflow: hidden;
             background-color: transparent;
@@ -98,33 +80,14 @@
     width: 100%;
     height: fit-content;
     .titulo_prox_shows{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:flex-end;
-        align-items:center;
-        width: 10%;
-        min-height: 100px;
-        background-color: rgb(255, 255, 255);
-        a{
-            padding-left: 10px;
-            background-color:transparent;
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: rgb(255, 0, 0);
-            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
-            text-decoration: none;
-            &:hover{
-                transform: scale(1.1);
-            }
-            
-        }
+        @include box-nombre-seccion($color-blanco-mexico-flag,black, black)
     }
     .grid-prox-shows{
         display: grid;
         height: auto;
-        width: 90%;
-        padding: 70px 20px 70px 20px; background-color: rgb(255, 255, 255);
+        width: $ancho-container-secciones;
+        padding: 70px 20px 70px 20px; 
+        background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;
         grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
         justify-items: center;
@@ -134,8 +97,8 @@
             flex-direction: column;
             justify-content:space-around;
             align-items:center;
-            width: 100%;
-            height:300px;
+            width: 80%;
+            height:200px;
             background-image: url("../imagenes/img_portada_tour.jpg");
             background-size: cover;
              box-shadow: 9px 9px 0px -2px rgba(0,0,0,0.56);
@@ -206,31 +169,12 @@
     width: 100%;
     height: fit-content;
     .titulo_spotys{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        min-height: 100px;
-        background-color: rgb(187, 30, 30);
-        a{
-            padding-left: 10px;
-            background-color:transparent;
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: rgb(255, 255, 255);
-            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
-            text-decoration: none;
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
+        @include box-nombre-seccion($color-rojo-mexico-flag,white,white)
     }
     .grid-spotys{
         display: grid;
         height: auto;
-        width: 90%;
+        width: $ancho-container-secciones;
         padding: 70px 20px 70px 20px; 
         background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;

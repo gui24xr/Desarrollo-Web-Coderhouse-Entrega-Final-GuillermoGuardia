@@ -1,197 +1,26 @@
-
-
-.contrataciones_container{
-    @include container_secciones(flex,url("../imagenes/img_form_sucr.jpg"));
-    background-size:cover;
-    /*background-position:left;*/
-    background-repeat: no-repeat;
-    /*background-position-x: -100px;*/
-    background-position-x:right;
-    background-position-y:center;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    
-    
-    .formulario_contacto{
- 
-            
-        width: 34%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items:flex-start;
-        background-color: rgba(5, 90, 55, 0.45); /* Color de fondo + transparencia de la division con rgba */
-        box-shadow: $boxshadow-tipo1;
-        
-        ul{
-            display: flex;
-            flex-direction: column;
-            justify-content:end;
-            
-            width: 80%;
-            height: 90%;
-            background-color:transparent;
-            
-            li{
-                
-                display: flex;
-                flex-direction: column;
-                background-color:transparent;
-                
-                h2{
-                background-color:transparent;
-                margin: 0 0 50px 0;
-                font-family: familia_1;
-                color: #FFFFFF;
-                letter-spacing: 5px;
-                text-decoration: none;
-                }
-                
-                label{
-                    margin: 0 0 0px 0;
-                    background-color: transparent;
-                    overflow: hidden;
-                    font-family: familia_1;
-                    letter-spacing: 2px;
-                    color: #FFFFFF;
-                }
-                input{
-                    width: 100%;
-                    height: 25px;
-                    margin: 0 0 10px 0;
-                    border-radius: 25px;
-                    border-style: none;
-                    background-color: #FFFFFF;
-                    font-family: familia_1;
-                    color: #000000;
-                    text-decoration: none;
-                    }
-                
-                    select{
-                    width: 100%;
-                    height: 25px;
-                    margin: 0 0 10px 0;
-                    border-radius: 25px;
-                    border-style: none;
-                    background-color: #FFFFFF;
-                    text-decoration: none;
-                    font-family: familia_1;
-                    color: #000000;
-                    
-                    option{
-                        background-color: #FFFFFF;
-                        border-radius: 25px;
-                        border-style: none;
-                        box-shadow: $boxshadow-tipo1;
-                        text-decoration: none;
-                        font-family: familia_1;
-                        color: #000000;
-                        }
-                    }   
-                .input_mensaje{
-                    height: 120px;
-                    padding: 0 0 0 5px;
-                    border-radius: 25px;
-                }
-                .boton_aceptar{
-                    width: 40%;
-                    height: 30px;
-                    /*margin: 40px 0 0px 0px;*/
-                    margin-top: 40px;
-                    align-self: center;
-                    
-                    border-radius: 25px;
-                    background-color: rgba(30, 78, 236, 0.55);
-                    box-shadow: $boxshadow-tipo1;
-                    font-family: familia_1;
-                    color: #f8f7f7;
-                    font-weight: bold;
-                }
-            }
-
-            }
-        }
-    }
-
-
-    //---------------------------------------------------------------------
-
-    .section-contrataciones-banner{
-        display: flex;
-        flex-wrap:wrap;
-        .contrataciones-banner-titulos{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items:center;
-            width: 10%;
-            min-height: 100px;
-            background-color: rgb(3, 90, 64);
-            
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: white;
-            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
-        }
-        .contrataciones-wraper-banner{
-            width: 90%;
-            min-height: 250px;
-            max-height: 350px;
-            display: flex;
-            overflow: hidden;
-            img{
-                width: 100%;
-                height: 200%;
-                
-            }
-        } 
-    }
-
-//----------------------------------------------------------------------------------------------
-
 .section-contacto{
     display: flex;
-    margin-bottom: 10vh;
-    
+    margin-bottom: 15vh;
     .section-name-contacto{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        min-height: 100px;
-        background-color: rgb(3, 90, 64);
-
-        font-family: familia_barlow;
-        font-size: 26px;
-        font-weight: bolder;
-        color: white;
-        text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
+        @include box-nombre-seccion($color-verde-mexico-flag,white,white)
     }
-
-
     .contrataciones-contenido{
         display: flex;
         flex-wrap: wrap;
         justify-content: end;
-        width: 85%;
+        width: $ancho-container-secciones;
         background-image: url("../imagenes/img_form_sucr.jpg");
         margin-left: 30px;
         margin-top: 2vh;
-        margin-bottom: 4vh;
         box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);-webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
         background-size:contain;
         background-position-x: calc(40% + 10x);
-
-            
-    
-            .form-contacto{
+        .form-contacto{
                 
-                width: 35%;
+                width: 38%;
                 height: 100%;
-                padding: 30px 30px 30px 30px;
-                background-color: rgba(236, 0, 0, 0.618);
+                padding: 30px 60px 30px 60px;
+                background-color: rgba(226, 216, 216, 0.618);
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -200,11 +29,14 @@
                 font-size: 2vh;
                 color: white;
                 font-weight: bolder;
+                box-shadow: $boxshadow-tipo3;
+                overflow: hidden;
                 .titulo-form{
                     font-size: 2.5vh;
                 }
                 .fila-form{
                     display: flex;
+                    overflow: hidden;
                     flex-direction: column;
                     background-color: transparent;
                     list-style-type: none;
@@ -217,11 +49,11 @@
                         border: 1px solid black;
                         border-radius: 10px;
                         height: 30px;
-                        min-width: 200px;
+                        
                         box-shadow: 5px 5px 10px 1px #000;
                     }
                     select{
-                        min-width: 300px;
+                        
                         height: 45px;
                         box-shadow: 5px 5px 10px 1px #000;
 
@@ -229,7 +61,7 @@
                     .textarea{
                         border-radius: 10px;
                         padding: 1vh;
-                        min-width: 300px;
+                        
                         box-shadow: 5px 5px 10px 1px #000;
                     }
                 }
@@ -242,7 +74,38 @@
 
         }
 
-}
+    }
+
+
+
+    .section-management{
+        display: flex;
+        box-shadow: $boxshadow-tipo1;
+        .titulo-management{
+            @include box-nombre-seccion($color-rojo-mexico-flag,white,white)
+        }
+    
+    
+        .container-management{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            width: $ancho-container-secciones;
+            min-height: 40vh;
+            p{
+              font-family: familia_barlow;
+              font-size: 3.5vh;
+              margin-left: 30px;
+              margin-top: 50px;  
+            }
+    
+                
+        
+            }
+    
+    }
+            
+    
         
 
 

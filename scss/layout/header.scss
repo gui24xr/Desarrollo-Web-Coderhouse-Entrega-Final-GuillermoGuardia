@@ -16,6 +16,7 @@
             background-color: transparent;
             width: 15vh; 
             height: 23vh;
+            filter: drop-shadow(5px 5px 10px #FFFAFA);
             animation: animacion_logo_intro 3s ease 0s 1 normal backwards;
             @keyframes animacion_logo_intro {
                 0% {

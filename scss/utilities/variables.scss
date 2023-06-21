@@ -18,7 +18,7 @@ inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
 
 
 /*VARIABLES BARRAS DE NAVEGACION Y SOCIAL BAR*/
-$height-nav-bar: 10vh;//70px;
+$height-nav-bar: 70px; //10vh;
 $ancho-nav-bar-media768:90px;
 $ancho-nav-bar-media576:90px;
 $color-fondo-nav-bar: hsla(241, 75%, 39%, 1);  /*rgb(49, 44, 44);*/
@@ -40,3 +40,12 @@ $posicion-y-social-bar-768: 750px;
 $ancho-nav-bar-media414:58px;
 $posicion-x-social-bar-414: 0;
 $posicion-y-social-bar-414: 80px;
+
+$ancho-titulo-secciones: 5%;
+$ancho-titulo-mexicoflag: 5%;
+$ancho-container-secciones: 95%;
+
+//COLORES
+$color-verde-mexico-flag: rgb(3, 90, 64);
+$color-blanco-mexico-flag: rgb(255, 255, 255);
+$color-rojo-mexico-flag: rgb(187, 30, 30); 

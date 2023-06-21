@@ -1,149 +1,17 @@
-.seccion_conciertos_container{
-    @include container_secciones(flex,url("../imagenes/img_portada_tour.jpg"));
-    background-size:cover;
-    background-position:right;
-    background-repeat: no-repeat;
-    /*background-position-x: 0px;
-    background-position-y: -40px;*/
-    
-    justify-content:flex-end;
-    
-    box-shadow: $boxshadow-tipo1;
-    .container_fechas_tour{
-    @include contenedor_informacion(row,20%,100%,rgba(5, 90, 55, 0.85));
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    
-    .concierto_box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 200px;
-        height: 220px;
-        margin: 25px 0 0 25px;
-        padding: 20px 0 0 0;
-        overflow: hidden;
-        box-shadow: $boxshadow-tipo2;
-
-        
-        &:hover{
-            background-color: rgba(34, 9, 100, 0.733);
-            filter: opacity(0.9);
-            transform: scale(1.04);
-            box-shadow: $boxshadow-tipo3
-        }
-      h2{
-            background-color: transparent;
-            color: rgb(255, 255, 255);
-            font-family:familia_barlow;
-            font-size: 18px;
-            letter-spacing: 4px;
-            font-weight: bolder;
-            }
-        .flag_tourdate{
-            width: 40px;
-            height: 40px;
-            margin: 20px  0 0PX 0;
-            background: none;
-            box-shadow: $boxshadow-tipo1;
-           }
-        h3{
-            margin: 0px  0 0PX 0;
-            background-color: transparent;
-            font: familia_1;
-            color: rgb(255, 255, 255);
-            font-family:familia_barlow;
-            font-size: 18px;
-            letter-spacing: 4px;
-        }
-        h4{
-            background-color: transparent;
-            font: familia_1;
-            color: rgb(255, 255, 255);
-            font-family:familia_barlow;
-            font-size: 16px;
-            font-weight: lighter;
-            letter-spacing: 2px;
-        }
-        h5{
-            background-color: transparent;
-            font: familia_1;
-            color: rgb(255, 255, 255);
-            font-family:familia_barlow;
-            font-size: 16px;
-            font-weight: lighter;
-           
-        }
-        a{
-            margin: 20px 0 0 0;
-            padding: 1px 15px 1px 15px;
-            background-color:rgba(248, 53, 27, 0.836);
-            box-shadow: $boxshadow-tipo2;
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-family:familia_barlow;
-            font-size: 16px;
-            font-weight: lighter;
-            &:hover{
-                background-color: rgba(50, 117, 11, 0.733);
-            }
-            
-        }
-    }
-   
-}
-}
-
-
-
-//-----------------------------------------------------------------
-
 .section-conciertos{
     display: flex;
     
 
     .section-name-conciertos{
-        width: 10%;
-        display: flex;
-        flex-direction:column;
-        height: auto;
         
-        
-        .colorflag1{
-            background-color: rgb(3, 90, 64);
-            width: 100%;
-            height: 33.3%;
-        }
-        }
-        .colorflag2{
-            background-color: rgb(255, 255, 255);
-            width: 100%;
-            height: 33.3%;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items:center;
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: black;
-            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
-        }
-        .colorflag3{
-            background-color: rgb(187, 30, 30);
-            
-            width: 100%;
-            height: 33.3%;
-        }
-        
-    
-
+        @include box-nombre-seccion-mexicoflag
+    }
     .conciertos-contenido{
         display: grid;
         height: auto;
-        width: 90%;
-        padding: 70px 20px 70px 20px; background-color: rgb(255, 255, 255);
+        width: $ancho-container-secciones;
+        padding: 70px 20px 70px 20px; 
+        background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;
         grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
         justify-items: center;
