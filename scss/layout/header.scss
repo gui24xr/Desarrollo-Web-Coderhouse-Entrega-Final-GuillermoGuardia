@@ -17,15 +17,14 @@
             width: 15vh; 
             height: 23vh;
             filter: drop-shadow(5px 5px 10px #FFFAFA);
-            animation: animacion_logo_intro 3s ease 0s 1 normal backwards;
-            @keyframes animacion_logo_intro {
+            animation: anim-logo-intro 2s ease 0s 1 normal forwards;
+            @keyframes anim-logo-intro {
                 0% {
-                    opacity: 0;
-                    transform: translateX(-250px);
+                    transform: scaleX(0.4);
                 }
+            
                 100% {
-                    opacity: 1;
-                    transform: translateX(0);
+                    transform: scaleX(1);
                 }
             }
         }

@@ -60,15 +60,13 @@
       width: 15vh;
       height: 23vh;
       filter: drop-shadow(5px 5px 10px #FFFAFA);
-      animation: animacion_logo_intro 3s ease 0s 1 normal backwards; }
+      animation: anim-logo-intro 2s ease 0s 1 normal forwards; }
 
-@keyframes animacion_logo_intro {
+@keyframes anim-logo-intro {
   0% {
-    opacity: 0;
-    transform: translateX(-250px); }
+    transform: scaleX(0.4); }
   100% {
-    opacity: 1;
-    transform: translateX(0); } }
+    transform: scaleX(1); } }
     .header .intro-sitio .intro-boton-start {
       align-self: center;
       font-family: familia_barlow;
@@ -816,54 +814,63 @@
       width: 100%;
       height: 25%; }
   .section-musica .wraper-musica {
-    display: flex;
+    display: grid;
     height: auto;
     width: 95%;
     padding: 70px 20px 70px 20px;
     background-color: white;
-    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
-  .section-musica .list-files-lcg {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding: 40px 40px 40px 40px;
-    gap: 50px;
-    box-shadow: 10px 13px 36px 1px #000;
-    background-color: #0099ff; }
-    .section-musica .list-files-lcg li {
-      list-style-type: none;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-row: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    row-gap: 50px;
+    background-size: contain;
+    background-color: #5c5555; }
+    .section-musica .wraper-musica .frame-song {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 30px;
+      height: fit-content;
       background-color: transparent; }
-      .section-musica .list-files-lcg li img {
-        width: 180px;
-        height: 180px;
-        box-shadow: 5px 7px 10px 1px #000; }
-        .section-musica .list-files-lcg li img:hover {
-          transform: scale(1.2);
-          opacity: 0.8;
-          cursor: pointer; }
-      .section-musica .list-files-lcg li .data-music {
+      .section-musica .wraper-musica .frame-song:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transform: scale(1.06); }
+      .section-musica .wraper-musica .frame-song .div-pic {
+        position: relative;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
         background-color: transparent; }
-        .section-musica .list-files-lcg li .data-music p {
-          background-color: transparent;
-          font: familia_barlow;
-          font-size: 24px;
-          font-weight: bolder;
-          letter-spacing: 4px;
-          color: white; }
-        .section-musica .list-files-lcg li .data-music audio {
-          background-color: transparent; }
+        .section-musica .wraper-musica .frame-song .div-pic .song-pic {
+          width: 130px;
+          height: 130px; }
+      .section-musica .wraper-musica .frame-song .info-song {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px 10px 20px;
+        max-width: 260px; }
+        .section-musica .wraper-musica .frame-song .info-song p {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: bold;
+          font-size: 18px; }
+        .section-musica .wraper-musica .frame-song .info-song audio {
+          width: 180px;
+          height: 25px; }
+        .section-musica .wraper-musica .frame-song .info-song a {
+          text-decoration: none; }
+          .section-musica .wraper-musica .frame-song .info-song a .spoty-framesong {
+            width: 25px;
+            height: 25px;
+            background-color: transparent; }
+            .section-musica .wraper-musica .frame-song .info-song a .spoty-framesong:hover {
+              cursor: pointer;
+              transform: scale(1.2); }
 
 .portada_intro {
   position: fixed;
