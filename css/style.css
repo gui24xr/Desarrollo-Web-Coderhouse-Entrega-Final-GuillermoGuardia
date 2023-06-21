@@ -44,7 +44,7 @@
   width: 100%;
   height: fit-content;
   /* SECCION BARRA DE NAVEGACION SUPERIOR -------------------------------------------------------------------------- */ }
-  .header .intro_sitio {
+  .header .intro-sitio {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -55,7 +55,7 @@
     background: linear-gradient(180deg, #277e4f 0%, #221a1a 50%);
     background: -webkit-linear-gradient(180deg, #277e4f 0%, #221a1a 50%);
     background: -moz-linear-gradient(180deg, #277e4f 0%, #221a1a 50%); }
-    .header .intro_sitio .logo-intro {
+    .header .intro-sitio .logo-intro {
       background-color: transparent;
       width: 15vh;
       height: 23vh;
@@ -68,33 +68,40 @@
   100% {
     opacity: 1;
     transform: translateX(0); } }
-    .header .intro_sitio .intro-boton-start {
-      animation: myAnim 4s ease 0s infinite normal forwards;
+    .header .intro-sitio .intro-boton-start {
       align-self: center;
       font-family: familia_barlow;
       font-size: 4vh;
       color: #FFFFFF;
       background-color: transparent;
-      border: none; }
-      .header .intro_sitio .intro-boton-start:hover {
+      border: none;
+      animation: myAnim 1s ease 0s infinite normal forwards; }
+      .header .intro-sitio .intro-boton-start:hover {
         background-color: rgba(34, 9, 100, 0.733);
         transform: scale(1.06);
         box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
 @keyframes myAnim {
-  0%,
-  50%,
-  100% {
+  0%, 50%, 100% {
     opacity: 1; }
-  25%,
-  75% {
+  25%, 75% {
     opacity: 0; } }
+  .header .intro-sitio-animar {
+    animation: animacion_logo_intro 10s ease 0s 1 normal backwards; }
+
+@keyframes animacion_logo_intro {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+  100% {
+    opacity: 0;
+    transform: translateX(50px); } }
   .header .header_nav_bar {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70px;
+    height: 10vh;
     background-color: #1b19ae;
     box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
     .header .header_nav_bar .header_nav_logo1 {
@@ -144,7 +151,7 @@
             letter-spacing: 0.15em;
             font-style: normal;
             font-weight: 400px;
-            font-size: 16px;
+            font-size: 2.2vh;
             text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6); }
     .header .header_nav_bar .header_nav_mxflag {
       /*flex-grow: 0.2;*/
@@ -156,10 +163,10 @@
 
 .portada_index {
   width: 100%;
-  height: 660px;
+  height: 90vh;
   background-image: url("../imagenes/img_portada_tour2.jpg");
   background-size: contain;
-  background-position-y: -30px;
+  background-position-y: -60px;
   background-position-x: 150px;
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +241,7 @@
       .section-portada-noticias .wraper-noticias-portada .portada-noticia-card .texto-noticia-card {
         padding-top: 40px;
         font-family: familia_barlow;
-        font-size: 18px;
+        font-size: 2.5vh;
         color: #fafafa;
         overflow: hidden;
         background-color: transparent; }
@@ -372,7 +379,8 @@
         box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
 .section-bio {
-  display: flex; }
+  display: flex;
+  margin-bottom: 10vh; }
   .section-bio .section-name-bio {
     display: flex;
     flex-wrap: wrap;
@@ -404,6 +412,7 @@
     background-repeat: no-repeat;
     margin-top: 0;
     margin-left: 30px;
+    margin-top: 2vh;
     box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
@@ -615,7 +624,7 @@
     align-items: center;
     width: 10%;
     min-height: 100px;
-    background-color: #bb1e1e;
+    background-color: #035a40;
     font-family: familia_barlow;
     font-size: 26px;
     font-weight: bolder;
@@ -625,10 +634,97 @@
     width: 90%;
     min-height: 250px;
     max-height: 350px;
-    display: flex; }
+    display: flex;
+    overflow: hidden; }
     .section-contrataciones-banner .contrataciones-wraper-banner img {
       width: 100%;
       height: 200%; }
+
+.section-contacto {
+  display: flex;
+  margin-bottom: 10vh; }
+  .section-contacto .section-name-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    min-height: 100px;
+    background-color: #035a40;
+    font-family: familia_barlow;
+    font-size: 26px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+  .section-contacto .contrataciones-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 85%;
+    background-image: url("../imagenes/img_form_sucr.jpg");
+    margin-left: 30px;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    background-size: contain;
+    background-position-x: calc(40% + 10x); }
+    .section-contacto .contrataciones-contenido .form-contacto {
+      width: 35%;
+      height: 100%;
+      padding: 30px 30px 30px 30px;
+      background-color: rgba(236, 0, 0, 0.618);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: familia_questrial;
+      font-size: 2vh;
+      color: white;
+      font-weight: bolder; }
+      .section-contacto .contrataciones-contenido .form-contacto .titulo-form {
+        font-size: 2.5vh; }
+      .section-contacto .contrataciones-contenido .form-contacto .fila-form {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        list-style-type: none; }
+        .section-contacto .contrataciones-contenido .form-contacto .fila-form label {
+          background-color: transparent; }
+        .section-contacto .contrataciones-contenido .form-contacto .fila-form input {
+          border: 1px solid black;
+          border-radius: 10px;
+          height: 30px;
+          min-width: 200px;
+          box-shadow: 5px 5px 10px 1px #000; }
+        .section-contacto .contrataciones-contenido .form-contacto .fila-form select {
+          min-width: 300px;
+          height: 45px;
+          box-shadow: 5px 5px 10px 1px #000; }
+        .section-contacto .contrataciones-contenido .form-contacto .fila-form .textarea {
+          border-radius: 10px;
+          padding: 1vh;
+          min-width: 300px;
+          box-shadow: 5px 5px 10px 1px #000; }
+      .section-contacto .contrataciones-contenido .form-contacto .boton_aceptar {
+        height: 50px;
+        margin-left: 15px;
+        padding: 2px 32px 2px 32px;
+        font-family: familia_1;
+        font-size: 18px;
+        color: #FFFFFF;
+        background-color: transparent;
+        border-style: double;
+        border-color: #FFFFFF;
+        overflow: hidden;
+        width: 35%;
+        align-self: center;
+        box-shadow: 5px 5px 10px 1px #000; }
+        .section-contacto .contrataciones-contenido .form-contacto .boton_aceptar:hover {
+          background-color: rgba(34, 9, 100, 0.733);
+          transform: scale(1.04);
+          box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
 
 .seccion_conciertos_container {
   display: flex;
@@ -725,6 +821,101 @@
         font-weight: lighter; }
         .seccion_conciertos_container .container_fechas_tour .concierto_box a:hover {
           background-color: rgba(50, 117, 11, 0.733); }
+
+.section-conciertos {
+  display: flex; }
+  .section-conciertos .section-name-conciertos {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .section-conciertos .section-name-conciertos .colorflag1 {
+      background-color: #035a40;
+      width: 100%;
+      height: 33.3%; }
+  .section-conciertos .colorflag2 {
+    background-color: white;
+    width: 100%;
+    height: 33.3%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: familia_barlow;
+    font-size: 26px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.68); }
+  .section-conciertos .colorflag3 {
+    background-color: #bb1e1e;
+    width: 100%;
+    height: 33.3%; }
+  .section-conciertos .conciertos-contenido {
+    display: grid;
+    height: auto;
+    width: 90%;
+    padding: 70px 20px 70px 20px;
+    background-color: white;
+    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-items: center;
+    gap: 24px; }
+    .section-conciertos .conciertos-contenido .flyer-concierto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 80%;
+      height: 200px;
+      background-image: url("../imagenes/img_portada_tour.jpg");
+      background-size: cover;
+      box-shadow: 9px 9px 0px -2px rgba(0, 0, 0, 0.56);
+      -webkit-box-shadow: 9px 9px 0px -2px rgba(0, 0, 0, 0.56);
+      -moz-box-shadow: 9px 9px 0px -2px rgba(0, 0, 0, 0.56); }
+      .section-conciertos .conciertos-contenido .flyer-concierto:hover {
+        background-blend-mode: luminosity;
+        transform: scale(1.1);
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+      .section-conciertos .conciertos-contenido .flyer-concierto .flyer-show-fecha {
+        background-color: transparent;
+        font-family: familia_barlow;
+        font-size: 28px;
+        font-weight: bold;
+        color: white; }
+      .section-conciertos .conciertos-contenido .flyer-concierto .flyer-show-flag {
+        width: 60px;
+        height: 45px;
+        background-color: transparent; }
+      .section-conciertos .conciertos-contenido .flyer-concierto .flyer-show-ciudad {
+        background-color: transparent;
+        font-family: familia_barlow;
+        font-size: 24px;
+        font-weight: bold;
+        color: white; }
+      .section-conciertos .conciertos-contenido .flyer-concierto .flyer-show-recinto {
+        background-color: transparent;
+        font-family: familia_barlow;
+        font-size: 16px;
+        font-weight: lighter;
+        color: white; }
+      .section-conciertos .conciertos-contenido .flyer-concierto .flyer-show-direccion {
+        background-color: transparent;
+        font-family: familia_barlow;
+        font-size: 16px;
+        font-weight: lighter;
+        color: white; }
+      .section-conciertos .conciertos-contenido .flyer-concierto a {
+        background-color: #0400ff;
+        font-family: familia_barlow;
+        font-size: 14px;
+        border-style: solid white 2px;
+        padding: 2px 8px 2px 8px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99);
+        -webkit-box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99);
+        -moz-box-shadow: 9px 13px 0px -8px rgba(0, 0, 0, 0.99); }
+        .section-conciertos .conciertos-contenido .flyer-concierto a:hover {
+          background-color: #05632c; }
 
 .galeria_imagenes_container {
   display: grid;
@@ -1019,12 +1210,13 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      background-color: transparent; }
+      background-color: transparent;
+      height: fit-content;
+      gap: 30px; }
       .seccion_footer .div_suscripcion .formulario_suscripcion input {
         width: 250px;
         height: 30px;
-        background-color: #FFFFFF;
-        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        background-color: #FFFFFF; }
       .seccion_footer .div_suscripcion .formulario_suscripcion .button_suscripcion {
         padding: 2px 32px 2px 32px;
         font-family: familia_1;
@@ -1079,7 +1271,7 @@
         font-family: 'Courier New', Courier, monospace;
         color: #FFFFFF;
         background-color: transparent;
-        font-size: medium; }
+        font-size: 2.5vh; }
 
 @media (max-width: 768px) {
   .header .header_nav_bar {
@@ -1089,7 +1281,7 @@
       order: 2;
       margin: 0 0px 0 0px;
       align-self: stretch;
-      width: 70px;
+      width: 10vh;
       height: 100px; }
     .header .header_nav_bar .header_nav_toggle {
       order: 3;

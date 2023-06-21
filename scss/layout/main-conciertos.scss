@@ -96,3 +96,124 @@
 }
 }
 
+
+
+//-----------------------------------------------------------------
+
+.section-conciertos{
+    display: flex;
+    
+
+    .section-name-conciertos{
+        width: 10%;
+        display: flex;
+        flex-direction:column;
+        height: auto;
+        
+        
+        .colorflag1{
+            background-color: rgb(3, 90, 64);
+            width: 100%;
+            height: 33.3%;
+        }
+        }
+        .colorflag2{
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 33.3%;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items:center;
+            font-family: familia_barlow;
+            font-size: 26px;
+            font-weight: bolder;
+            color: black;
+            text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
+        }
+        .colorflag3{
+            background-color: rgb(187, 30, 30);
+            
+            width: 100%;
+            height: 33.3%;
+        }
+        
+    
+
+    .conciertos-contenido{
+        display: grid;
+        height: auto;
+        width: 90%;
+        padding: 70px 20px 70px 20px; background-color: rgb(255, 255, 255);
+        box-shadow: $boxshadow-tipo3;
+        grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+        justify-items: center;
+        gap: 24px;
+        .flyer-concierto{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items:center;
+            width: 80%;
+            height:200px;
+            background-image: url("../imagenes/img_portada_tour.jpg");
+            background-size: cover;
+             box-shadow: 9px 9px 0px -2px rgba(0,0,0,0.56);
+            -webkit-box-shadow: 9px 9px 0px -2px rgba(0,0,0,0.56);
+            -moz-box-shadow: 9px 9px 0px -2px rgba(0,0,0,0.56);
+            &:hover{
+                background-blend-mode:luminosity;
+                transform: scale(1.1);
+                box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+                inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+                inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+                0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+                 }
+            .flyer-show-fecha{
+                background-color: transparent;
+                font-family: familia_barlow;
+                font-size: 28px;
+                font-weight: bold;
+                color: white;
+            }
+            .flyer-show-flag{
+                width: 60px;
+                height: 45px;
+                background-color: transparent;
+            }
+            .flyer-show-ciudad{
+                background-color: transparent;
+                font-family: familia_barlow;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+            }
+            .flyer-show-recinto{
+                background-color: transparent;
+                font-family: familia_barlow;
+                font-size: 16px;
+                font-weight:lighter;
+                color: white;
+            }
+            .flyer-show-direccion{
+                background-color: transparent;
+                font-family: familia_barlow;
+                font-size: 16px;
+                font-weight:lighter;
+                color: white;
+            }
+            a{
+                background-color:rgb(4, 0, 255);
+                font-family: familia_barlow;
+                font-size: 14px;
+                border-style: solid white 2px;
+                padding: 2px 8px 2px 8px;
+                color: white;
+                text-decoration: none;
+                box-shadow: 9px 13px 0px -8px rgba(0,0,0,0.99);-webkit-box-shadow: 9px 13px 0px -8px rgba(0,0,0,0.99);-moz-box-shadow: 9px 13px 0px -8px rgba(0,0,0,0.99);
+                &:hover{
+                    background-color: rgb(5, 99, 44);
+                }
+            }
+          }
+    }
+}

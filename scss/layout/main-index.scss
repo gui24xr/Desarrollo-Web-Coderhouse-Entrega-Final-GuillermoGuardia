@@ -1,10 +1,10 @@
 
 .portada_index{
     width: 100%;
-    height: 660px;
+    height: 90vh;//675px;
     background-image: url("../imagenes/img_portada_tour2.jpg");
     background-size:contain;
-    background-position-y: -30px;
+    background-position-y: -60px;
     background-position-x: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -82,7 +82,7 @@
             .texto-noticia-card{
             padding-top: 40px;
             font-family: familia_barlow;
-            font-size: 18px;
+            font-size: 2.5vh;
             color: rgb(250, 250, 250);
             overflow: hidden;
             background-color: transparent;

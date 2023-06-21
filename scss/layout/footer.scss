@@ -76,15 +76,18 @@
             letter-spacing: 3px;
         }
         .formulario_suscripcion{
+            
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             background-color: transparent;
+            height: fit-content;
+            gap: 30px;
             input{
                 width: 250px;
                 height: 30px;
                 background-color: #FFFFFF;
-                box-shadow: $boxshadow-tipo1;
+                
             }
             .button_suscripcion{
                 padding: 2px 32px 2px 32px;
@@ -148,7 +151,7 @@
                 font-family: 'Courier New', Courier, monospace;
                 color: #FFFFFF;
                 background-color: transparent;
-                font-size:medium;
+                font-size:2.5vh;
             }
         }
         

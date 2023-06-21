@@ -31,6 +31,25 @@ navToggle.addEventListener("click", () => {
 //})
 
 
+
+///////////////////////////////////////////////////////////////////////////
+const botonEsconderIntro = document.querySelector(".intro-boton-start");
+const introSitio = document.querySelector(".intro-sitio");
+
+botonEsconderIntro.addEventListener("click", funcion_esconder_intro);
+
+function funcion_esconder_intro(){
+
+  //introSitio.classList.toggle("intro-sitio-animar");
+  //funcion_desaparecer_intro();
+}
+
+
+function funcion_desaparecer_intro(){
+  setTimeout ( introSitio.classList.toggle("intro-sitio-desaparecer") , 6000);
+ 
+
+}
 /* ACA LA PRUEBA -----------------------*/
 
 const navToggle = document.querySelector(".header_nav_toggle");
@@ -150,4 +169,8 @@ for (i=0;i<=5;i++) {
 if (contador > 4){ contador = 1;}
 
 }
+
+
+
+
 
