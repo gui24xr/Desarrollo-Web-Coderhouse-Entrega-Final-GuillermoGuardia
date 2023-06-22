@@ -1,3 +1,25 @@
+@media (max-width: 1025px){
+    .section-portada-noticias{
+        .titulo-noticias-portada{
+            font-size: 1.5vh;
+        }
+  
+    }
+
+    .section-prox-shows{
+        .titulo_prox_shows{
+            font-size: 1.5vh; 
+        }
+    }
+
+    .section-spotys{
+        .titulo_spotys{
+          font-size: 1.5vh; 
+        }
+    }
+}
+
+
 @media (max-width: 768px){
     .section-portada-noticias{
         .titulo-noticias-portada{

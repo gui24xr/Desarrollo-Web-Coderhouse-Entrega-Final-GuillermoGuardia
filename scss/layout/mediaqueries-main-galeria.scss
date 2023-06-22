@@ -19,7 +19,8 @@
         }
     }
     .galeria-videos{
-        
+        flex-direction: column;
+        align-items: center;
         .galeria-videos-titulo{
             width: 96%;
             margin-top: 15px;
