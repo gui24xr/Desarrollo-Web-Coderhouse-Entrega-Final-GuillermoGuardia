@@ -1,3 +1,17 @@
+@media (max-width: 1025px){
+    .section-musica{
+        
+      
+        
+        .wraper-musica{
+            min-height: 80vh;
+            align-self: center;
+            align-items: center;
+            //padding: 60px 0px 60px 0px;
+        }
+    }
+          
+}
 
 @media (max-width: 576px){
     
@@ -15,17 +29,19 @@
             writing-mode: horizontal-tb;
             
             .colorflag1{
-                width: 33.3%;
+                width: 30%;
                 height:40px;
             }
             .colorflag2{
-                width: 33.3%;
+                width: 40%;
                 height:40px;
+                writing-mode: horizontal-tb;
+                text-orientation:sideways;
             }
             .colorflag3{
-                width: 33.3%;
+                width: 30%;
                 height:40px;
-            }  
+            }
         }
         .wraper-musica{
             align-self: center;

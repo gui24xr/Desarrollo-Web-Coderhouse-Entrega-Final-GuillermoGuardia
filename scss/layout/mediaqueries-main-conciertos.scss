@@ -5,25 +5,27 @@
         
         .section-name-conciertos{
             flex-direction: row;
-            width: 100%;
+            align-self: center;
             width: 96%;
             margin-top: 15px;
             margin-bottom: 15px;
             margin-left: 0;
-            align-self: center;
+            align-content: center;
             min-height: 40px;
-            writing-mode: horizontal-tb;
+            
             
             .colorflag1{
-                width: 33.3%;
+                width: 30%;
                 height:40px;
             }
             .colorflag2{
-                width: 33.3%;
+                width: 40%;
                 height:40px;
+                writing-mode: horizontal-tb;
+                text-orientation:sideways;
             }
             .colorflag3{
-                width: 33.3%;
+                width: 30%;
                 height:40px;
             }
         }

@@ -1,3 +1,27 @@
+@media (max-width: 768px){
+    .section-portada-noticias{
+        .titulo-noticias-portada{
+            font-size: 2vh;
+        }
+        .wraper-noticias-portada{
+            grid-template-columns: repeat(auto-fit,minmax(500px,1fr)); 
+        }
+    }
+
+    .section-prox-shows{
+        .titulo_prox_shows{
+            font-size: 2vh; 
+        }
+    }
+
+    .section-spotys{
+        .titulo_spotys{
+          font-size: 2vh; 
+        }
+    }
+}
+
+
 @media (max-width: 576px){
     
 .portada_index{
@@ -19,9 +43,9 @@
     .titulo-noticias-portada{
         width: 96%;
         margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 0;
-        align-self: center;
+        //margin-bottom: 15px;
+        //margin-left: 0;
+        //align-self: center;
         min-height: 40px;
         writing-mode: horizontal-tb;
     }
@@ -29,7 +53,8 @@
         width: 96%;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 50px;
-            }
+                
+        }
 }
     
 

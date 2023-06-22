@@ -218,7 +218,7 @@
   .section-portada-noticias .titulo-noticias-portada {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -226,7 +226,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -247,7 +247,7 @@
     justify-items: center;
     gap: 40px; }
     .section-portada-noticias .wraper-noticias-portada .portada-noticia-card {
-      width: 80%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       height: max-content;
@@ -281,7 +281,7 @@
   .section-prox-shows .titulo_prox_shows {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -289,7 +289,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -375,7 +375,7 @@
   .section-spotys .titulo_spotys {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -383,7 +383,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -415,7 +415,7 @@
   .section-bio .section-name-bio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -423,7 +423,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -488,7 +488,7 @@
   .section-contacto .section-name-contacto {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -496,7 +496,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -584,7 +584,7 @@
   .section-management .titulo-management {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -592,7 +592,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -624,23 +624,26 @@
     .section-conciertos .section-name-conciertos .colorflag1 {
       background-color: #035a40;
       width: 100%;
-      height: 25%; }
+      height: 15%; }
     .section-conciertos .section-name-conciertos .colorflag2 {
+      display: flex;
+      flex-direction: row;
       background-color: white;
       width: 100%;
-      height: 50%;
-      line-height: center;
+      height: 70%;
+      justify-content: center;
+      align-items: center;
       font-family: familia_3;
-      writing-mode: vertical-rl;
       text-orientation: upright;
-      font-size: 3vh;
+      writing-mode: vertical-rl;
+      font-size: 2.5vh;
       color: black;
       text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
       text-decoration: none; }
     .section-conciertos .section-name-conciertos .colorflag3 {
       background-color: #bb1e1e;
       width: 100%;
-      height: 25%; }
+      height: 15%; }
   .section-conciertos .conciertos-contenido {
     display: grid;
     height: auto;
@@ -714,7 +717,7 @@
   .galeria-pics .galeria-pics-titulo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -722,7 +725,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -770,7 +773,7 @@
   .galeria-videos .galeria-videos-titulo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 5%;
     min-height: 300px;
@@ -778,7 +781,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: white;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none; }
@@ -821,23 +824,26 @@
     .section-musica .section-titulo-musica .colorflag1 {
       background-color: #035a40;
       width: 100%;
-      height: 25%; }
+      height: 15%; }
     .section-musica .section-titulo-musica .colorflag2 {
+      display: flex;
+      flex-direction: row;
       background-color: white;
       width: 100%;
-      height: 50%;
-      line-height: center;
+      height: 70%;
+      justify-content: center;
+      align-items: center;
       font-family: familia_3;
-      writing-mode: vertical-rl;
       text-orientation: upright;
-      font-size: 3vh;
+      writing-mode: vertical-rl;
+      font-size: 2.5vh;
       color: black;
       text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
       text-decoration: none; }
     .section-musica .section-titulo-musica .colorflag3 {
       background-color: #bb1e1e;
       width: 100%;
-      height: 25%; }
+      height: 15%; }
   .section-musica .wraper-musica {
     display: grid;
     height: auto;
@@ -1143,14 +1149,14 @@
 
 @media (max-width: 1025px) {
   .header .header_nav_bar {
-    height: 70px;
+    height: 80px;
     justify-content: space-between;
     align-items: center; }
     .header .header_nav_bar .header_nav_logo1 {
       order: 2;
       align-self: stretch;
       width: 60px;
-      height: 70px; }
+      height: 80px; }
     .header .header_nav_bar .header_nav_toggle {
       order: 3;
       display: block;
@@ -1160,8 +1166,9 @@
     .header .header_nav_bar .nav_lista_secciones_sitio {
       order: 4;
       position: fixed;
+      z-index: 1;
       justify-content: center;
-      top: 70px;
+      top: 80px;
       width: 100%;
       height: 90vh;
       left: 100%;
@@ -1240,6 +1247,16 @@
   .seccion_footer .informacion_pie .leyendas_pie p {
     font-size: 1.9vh; } }
 
+@media (max-width: 768px) {
+  .section-portada-noticias .titulo-noticias-portada {
+    font-size: 2vh; }
+  .section-portada-noticias .wraper-noticias-portada {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+  .section-prox-shows .titulo_prox_shows {
+    font-size: 2vh; }
+  .section-spotys .titulo_spotys {
+    font-size: 2vh; } }
+
 @media (max-width: 576px) {
   .portada_index {
     background-image: url("../imagenes/img_portada_tour2.jpg");
@@ -1255,9 +1272,6 @@
     .section-portada-noticias .titulo-noticias-portada {
       width: 96%;
       margin-top: 15px;
-      margin-bottom: 15px;
-      margin-left: 0;
-      align-self: center;
       min-height: 40px;
       writing-mode: horizontal-tb; }
     .section-portada-noticias .wraper-noticias-portada {
@@ -1378,22 +1392,23 @@
     flex-direction: column; }
     .section-conciertos .section-name-conciertos {
       flex-direction: row;
-      width: 100%;
+      align-self: center;
       width: 96%;
       margin-top: 15px;
       margin-bottom: 15px;
       margin-left: 0;
-      align-self: center;
-      min-height: 40px;
-      writing-mode: horizontal-tb; }
+      align-content: center;
+      min-height: 40px; }
       .section-conciertos .section-name-conciertos .colorflag1 {
-        width: 33.3%;
+        width: 30%;
         height: 40px; }
       .section-conciertos .section-name-conciertos .colorflag2 {
-        width: 33.3%;
-        height: 40px; }
+        width: 40%;
+        height: 40px;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways; }
       .section-conciertos .section-name-conciertos .colorflag3 {
-        width: 33.3%;
+        width: 30%;
         height: 40px; }
     .section-conciertos .conciertos-contenido {
       align-self: center; } }
@@ -1414,21 +1429,24 @@
       width: 96%;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 50px; }
-  .galeria-videos {
-    flex-direction: column;
-    align-items: center; }
-    .galeria-videos .galeria-videos-titulo {
-      width: 96%;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      margin-left: 0;
-      align-self: center;
-      min-height: 40px;
-      writing-mode: horizontal-tb; }
-    .galeria-videos .galeria-videos-wraper {
-      width: 96%;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 50px; } }
+  .galeria-videos .galeria-videos-titulo {
+    width: 96%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    align-self: center;
+    min-height: 40px;
+    writing-mode: horizontal-tb; }
+  .galeria-videos .galeria-videos-wraper {
+    width: 96%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px; } }
+
+@media (max-width: 1025px) {
+  .section-musica .wraper-musica {
+    min-height: 80vh;
+    align-self: center;
+    align-items: center; } }
 
 @media (max-width: 576px) {
   .section-musica {
@@ -1444,13 +1462,15 @@
       min-height: 40px;
       writing-mode: horizontal-tb; }
       .section-musica .section-titulo-musica .colorflag1 {
-        width: 33.3%;
+        width: 30%;
         height: 40px; }
       .section-musica .section-titulo-musica .colorflag2 {
-        width: 33.3%;
-        height: 40px; }
+        width: 40%;
+        height: 40px;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways; }
       .section-musica .section-titulo-musica .colorflag3 {
-        width: 33.3%;
+        width: 30%;
         height: 40px; }
     .section-musica .wraper-musica {
       align-self: center;

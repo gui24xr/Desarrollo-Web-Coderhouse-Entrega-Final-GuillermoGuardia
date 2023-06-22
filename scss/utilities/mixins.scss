@@ -136,7 +136,7 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: $color-texto-titulo-seccion;// rgb(247, 247, 247);
     text-shadow: 0px 2px 3px rgba(0,0,0,0.68);
     text-decoration: none;
@@ -152,7 +152,7 @@
     //Caja Seccion
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content:space-around;
     align-items:center;
     width: $ancho-titulo-secciones;
     min-height: 300px;
@@ -162,7 +162,8 @@
     font-family: familia_3;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 3vh;
+    
+    font-size: 2.5vh;
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
     text-decoration: none;
@@ -185,22 +186,27 @@
     display: flex;
     flex-direction:column;
     height: auto;
+
+    
     .colorflag1{
         background-color: $color-verde-mexico-flag;
         width: 100%;
-        height: 25%;
+        height: 15%;
         }
         
     .colorflag2{
+        display: flex; flex-direction: row;
         background-color: $color-blanco-mexico-flag;
         width: 100%;
-        height: 50%;
-        line-height: center;
+        height: 70%;
+        justify-content:center;
+        align-items:center;
         //Estilo texto.
         font-family: familia_3;
-        writing-mode: vertical-rl;
         text-orientation: upright;
-        font-size: 3vh;
+        writing-mode: vertical-rl;
+       
+        font-size: 2.5vh;
         color:black;
         text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.68);
         text-decoration: none;
@@ -208,6 +214,6 @@
         .colorflag3{
             background-color: $color-rojo-mexico-flag;
             width: 100%;
-            height: 25%;
+            height: 15%;
         }
   }
