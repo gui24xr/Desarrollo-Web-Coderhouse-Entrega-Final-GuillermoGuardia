@@ -1,60 +1,17 @@
-/*const navToggle = document.querySelector(".header_nav_toggle");
-const navMenu = document.querySelector(".nav_lista_secciones_sitio");
-
-//const suscripcionPanel = querySelector(".div_suscripcion");
-
-
-
-navToggle.addEventListener("click", () => {
-  
-  navMenu.classList.toggle("nav_lista_secciones_sitio_visible");
-  //suscripcionPanel.classList.toggle("div_suscripcion_visible");
-  //navMenu.classList.toggle("div_suscripcion_visible");
- 
-
-  if (navMenu.classList.contains("menu_header_nav_var")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
-});*/
-
-
-
-//const navLogo = document.querySelector(".header_nav_logo1");
-
-
-///navLogo.addEventListener("click", () => {
- 
-  //suscripcionPanel.classList.toggle("div_suscripcion_visible");
-
-//})
-
-
-
-///////////////////////////////////////////////////////////////////////////
-const botonEsconderIntro = document.querySelector(".intro-boton-start");
-const introSitio = document.querySelector(".intro-sitio");
-
-botonEsconderIntro.addEventListener("click", funcion_esconder_intro);
-
-function funcion_esconder_intro(){
-
-  //introSitio.classList.toggle("intro-sitio-animar");
-  //funcion_desaparecer_intro();
-}
-
-
-function funcion_desaparecer_intro(){
-  setTimeout ( introSitio.classList.toggle("intro-sitio-desaparecer") , 6000);
- 
-
-}
-/* ACA LA PRUEBA -----------------------*/
+/*MENU DESPLEGABLE -----------------------*/
 
 const navToggle = document.querySelector(".header_nav_toggle");
 const navMenu = document.querySelector(".nav_lista_secciones_sitio");
 
+navToggle.addEventListener("click", mi_funcion);
+
+function mi_funcion(){
+
+  navMenu.classList.toggle("nav_lista_secciones_sitio_visible");
+  //suscripcionPanel.classList.toggle("div_suscripcion_visible");
+}
+
+/////////////////////////////////////////////////////
 const buttonActiveSuscripcion = document.querySelector(".boton_activar_suscripcion");
 const suscripcionPanel = document.querySelector(".div_suscripcion");
 

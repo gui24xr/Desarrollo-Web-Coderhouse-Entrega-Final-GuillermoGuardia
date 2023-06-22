@@ -1,0 +1,98 @@
+@media (max-width: 1025px){
+
+    .header{
+        .header_nav_bar{
+            height: $height-nav-bar-media1025;
+            justify-content:space-between;
+            align-items: center;
+            .header_nav_logo1{
+            order: 2;
+            align-self:stretch;
+            width:70px;
+            height: $height-nav-bar-media1025;
+            }
+            .header_nav_toggle{
+                order: 3;
+                display: block;
+                margin: 0 20px 0 0px;
+                }
+            .nav_lista_secciones_sitio{
+                order: 4;
+                position:fixed;
+                justify-content:center;
+                top: $height-nav-bar-media1025;
+                width: 100%;
+                height: 90vh; // Altura menu
+                left: 100%;
+                transition: left 0.3s;
+                background: linear-gradient(180deg, #2106E8 0%, #000000 100%);
+                backdrop-filter: blur(5px);
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 0;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content:start;
+                    
+                    
+                    li{
+                        a{
+                            font-size: 2.5vh;
+                        }
+                    }
+                }
+            }
+            .header_nav_mxflag{
+                order: 1;
+                height: 60px;
+                margin: 0 0 0 30px;
+            }
+            .nav_lista_secciones_sitio_visible{
+                left: 0;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 768px){
+
+    .header{
+        .header_nav_bar{
+            height: $height-nav-bar-media768;
+          
+            .header_nav_logo1{
+           
+            width:70px;
+            height: $height-nav-bar-media768;
+            }
+            .header_nav_toggle{
+             
+                }
+            .nav_lista_secciones_sitio{
+               
+                ul{
+               
+                    
+                    
+                    li{
+                        a{
+                            font-size: 2;
+                        }
+                    }
+                }
+            }
+            .header_nav_mxflag{
+                order: 1;
+                height: 60px;
+                margin: 0 0 0 30px;
+            }
+           
+        }
+
+    }
+}
+
+
