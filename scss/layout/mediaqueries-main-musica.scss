@@ -1,9 +1,9 @@
 
 @media (max-width: 576px){
-    .section-conciertos{
+    
+    .section-musica{
         flex-direction: column;
-        
-        .section-name-conciertos{
+        .section-titulo-musica{
             flex-direction: row;
             width: 100%;
             width: 96%;
@@ -25,11 +25,18 @@
             .colorflag3{
                 width: 33.3%;
                 height:40px;
-            }
+            }  
         }
-        .conciertos-contenido{
+        .wraper-musica{
             align-self: center;
+            
+            
         }
-    }
     
+        }
+          
+    
+    
+
+
 }

@@ -188,9 +188,10 @@
   width: 100%;
   height: 90vh;
   background-image: url("../imagenes/img_portada_tour2.jpg");
-  background-size: contain;
-  background-position-y: -60px;
-  background-position-x: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: calc(50%);
+  background-position-x: calc(50%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1153,7 +1154,9 @@
     .header .header_nav_bar .header_nav_toggle {
       order: 3;
       display: block;
-      margin: 0 20px 0 0px; }
+      margin: 0 20px 0 0px;
+      font-size: 65px;
+      margin: 0 10px 0 10px; }
     .header .header_nav_bar .nav_lista_secciones_sitio {
       order: 4;
       position: fixed;
@@ -1176,8 +1179,9 @@
           font-size: 2.5vh; }
     .header .header_nav_bar .header_nav_mxflag {
       order: 1;
-      height: 60px;
-      margin: 0 0 0 30px; }
+      height: 45px;
+      width: 45px;
+      margin: 0 0 0 10px; }
     .header .header_nav_bar .nav_lista_secciones_sitio_visible {
       left: 0; } }
 
@@ -1185,16 +1189,20 @@
   .header .header_nav_bar {
     height: 60px; }
     .header .header_nav_bar .header_nav_logo1 {
-      width: 51px;
+      width: 48px;
       height: 60px; }
+    .header .header_nav_bar .header_nav_toggle {
+      font-size: 50px;
+      margin: 0 10px 0 10px; }
     .header .header_nav_bar .nav_lista_secciones_sitio {
       top: 60px; }
       .header .header_nav_bar .nav_lista_secciones_sitio ul li a {
-        font-size: 2; }
+        font-size: 2vh; }
     .header .header_nav_bar .header_nav_mxflag {
       order: 1;
-      height: 60px;
-      margin: 0 0 0 30px; } }
+      height: 30px;
+      width: 30px;
+      margin: 0 0 0 10px; } }
 
 @media (max-width: 768px) {
   .seccion_footer .div_suscripcion {
@@ -1232,46 +1240,60 @@
   .seccion_footer .informacion_pie .leyendas_pie p {
     font-size: 1.9vh; } }
 
-@media (max-width: 768px) {
-  .index_container_ppal {
-    display: flex;
-    width: 100%;
-    height: 720px;
-    margin: 20px 0 0 0;
-    /*70px 0 10px 0; 70px para compensar header fiex*/
-    padding-bottom: 30px;
-    overflow: hidden;
-    box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1), inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1), 0px 10px 41px -3px rgba(0, 0, 0, 0.1), inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    background-size: 115%;
-    background-position-y: 55px; }
-    .index_container_ppal .spoty_container {
-      width: 90%;
-      height: 120px; }
-      .index_container_ppal .spoty_container .spoty_1 {
-        width: 300px; }
-      .index_container_ppal .spoty_container .spoty_2 {
-        width: 300px; } }
-
-@media (max-width: 414px) {
-  .index_container_ppal {
-    height: 680px;
+@media (max-width: 576px) {
+  .portada_index {
+    background-image: url("../imagenes/img_portada_tour2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: calc(50%);
+    background-position-x: calc(50%); }
+    .portada_index .titulo_index {
+      font-size: 50px; }
+  .section-portada-noticias {
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-size: 135%;
-    background-position-x: -115px;
-    background-position-y: 55px; }
-    .index_container_ppal .spoty_container {
-      flex-direction: column;
-      width: 90%;
-      height: 300px; }
-      .index_container_ppal .spoty_container .spoty_1 {
-        width: 300px; }
-      .index_container_ppal .spoty_container .spoty_2 {
-        width: 300px; } }
+    align-items: center; }
+    .section-portada-noticias .titulo-noticias-portada {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-portada-noticias .wraper-noticias-portada {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 50px; }
+  .section-prox-shows {
+    flex-direction: column;
+    align-items: center; }
+    .section-prox-shows .titulo_prox_shows {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-prox-shows .grid-prox-shows {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 50px; }
+  .section-spotys {
+    flex-direction: column;
+    align-items: center; }
+    .section-spotys .titulo_spotys {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-spotys .grid-spotys {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 50px; } }
 
 @media (max-width: 1025px) {
   .section-bio {
@@ -1280,17 +1302,21 @@
       width: 96%;
       margin-top: 15px;
       margin-bottom: 15px;
+      margin-left: 0;
       align-self: center;
       min-height: 40px;
       writing-mode: horizontal-tb; }
     .section-bio .biografia_container {
+      width: 96%;
+      margin-left: 0;
       height: fit-content;
       overflow: visible;
       background-size: contain;
       background-position-x: calc(100% + 0px);
       /*200px;*/
       align-items: center;
-      height: fit-content; }
+      height: fit-content;
+      align-self: center; }
       .section-bio .biografia_container .contenedor_txt {
         width: 100%;
         height: fit-content;
@@ -1303,79 +1329,128 @@
           font-size: 18px;
           letter-spacing: 0.3px; } }
 
-@media (max-width: 768px) {
-  .contrataciones_container {
-    margin-bottom: 0;
-    height: 880px;
-    background-position-x: -400px;
-    background-position-y: -70px;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: flex-end; }
-    .contrataciones_container .formulario_contacto {
-      width: 80%;
-      height: 90%;
-      background-color: rgba(248, 248, 248, 0.3); } }
+@media (max-width: 1025px) {
+  .section-contacto {
+    flex-direction: column; }
+    .section-contacto .section-name-contacto {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-contacto .contrataciones-contenido {
+      width: 96%;
+      height: fit-content;
+      align-items: center;
+      align-self: center;
+      margin-left: 0px;
+      margin-top: 2vh;
+      background-size: contain;
+      background-position-x: calc(100% + 0px);
+      /*200px;*/
+      background-repeat: no-repeat; }
+      .section-contacto .contrataciones-contenido .form-contacto {
+        width: 100%;
+        height: fit-content;
+        padding: 30px 60px 30px 60px;
+        margin-top: calc(65%);
+        background-color: #035a40;
+        align-items: center; }
+        .section-contacto .contrataciones-contenido .form-contacto .fila-form {
+          max-width: 450px; }
+  .section-management {
+    flex-direction: column; }
+    .section-management .titulo-management {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-management .container-management {
+      justify-content: center; } }
 
-@media (max-width: 414px) {
-  .contrataciones_container {
-    background-size: 280%;
-    margin-bottom: 0;
-    height: 620px;
-    background-position-x: -300px; }
-    .contrataciones_container .formulario_contacto {
-      width: 80%;
-      height: 98%; } }
-
-@media (max-width: 768px) {
-  .seccion_conciertos_container {
-    margin-bottom: 0;
-    height: 880px;
-    flex-direction: column;
-    justify-items: flex-end;
-    background-position-x: -350px;
-    background-position-y: -150px; }
-    .seccion_conciertos_container .container_fechas_tour {
-      width: 94%;
-      height: 30%;
-      overflow-x: scroll;
-      overflow-y: hidden; } }
-
-/* MEDIA 414 ---------------------------------*/
-@media (max-width: 414px) {
-  .seccion_conciertos_container {
-    height: 620px;
-    flex-direction: column;
-    justify-items: flex-end;
-    background-position-x: -190px;
-    background-position-y: -70px; }
-    .seccion_conciertos_container .container_fechas_tour {
+@media (max-width: 576px) {
+  .section-conciertos {
+    flex-direction: column; }
+    .section-conciertos .section-name-conciertos {
+      flex-direction: row;
       width: 100%;
-      height: 35%;
-      justify-content: center; }
-      .seccion_conciertos_container .container_fechas_tour .concierto_box {
-        width: 170px;
-        height: 170px; } }
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+      .section-conciertos .section-name-conciertos .colorflag1 {
+        width: 33.3%;
+        height: 40px; }
+      .section-conciertos .section-name-conciertos .colorflag2 {
+        width: 33.3%;
+        height: 40px; }
+      .section-conciertos .section-name-conciertos .colorflag3 {
+        width: 33.3%;
+        height: 40px; }
+    .section-conciertos .conciertos-contenido {
+      align-self: center; } }
 
-@media (max-width: 768px) {
-  .galeria_imagenes_container {
-    /*margin-top: $ancho-nav-bar-media768;
-        margin-bottom: 0;
-        /*height: 880px;
+@media (max-width: 576px) {
+  .galeria-pics {
+    flex-direction: column;
+    align-items: center; }
+    .galeria-pics .galeria-pics-titulo {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .galeria-pics .galeria-pics-wraper {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 50px; }
+  .galeria-videos {
+    flex-direction: column;
+    align-items: center; }
+    .galeria-videos .galeria-videos-titulo {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .galeria-videos .galeria-videos-wraper {
+      width: 96%;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 50px; } }
 
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-        grid-auto-rows: minmax(880px, auto);
-        gap: 15px;*/
-    margin-bottom: 200px; } }
-
-/* MEDIA 414 ---------------------------------*/
-@media (max-width: 414px) {
-  .galeria_imagenes_container {
-    /*margin-top: $ancho-nav-bar-media576;
-        margin-bottom: 0;
-        height: 620px;
-        
-        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-        grid-auto-rows: minmax(310px, auto);
-        gap: 15px;
-       */ } }
+@media (max-width: 576px) {
+  .section-musica {
+    flex-direction: column; }
+    .section-musica .section-titulo-musica {
+      flex-direction: row;
+      width: 100%;
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+      .section-musica .section-titulo-musica .colorflag1 {
+        width: 33.3%;
+        height: 40px; }
+      .section-musica .section-titulo-musica .colorflag2 {
+        width: 33.3%;
+        height: 40px; }
+      .section-musica .section-titulo-musica .colorflag3 {
+        width: 33.3%;
+        height: 40px; }
+    .section-musica .wraper-musica {
+      align-self: center; } }

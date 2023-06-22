@@ -15,6 +15,8 @@
                 order: 3;
                 display: block;
                 margin: 0 20px 0 0px;
+                font-size: 65px;
+                margin: 0 10px 0 10px;
                 }
             .nav_lista_secciones_sitio{
                 order: 4;
@@ -45,8 +47,9 @@
             }
             .header_nav_mxflag{
                 order: 1;
-                height: 60px;
-                margin: 0 0 0 30px;
+                height: 45px;
+                width: 45px;
+                margin: 0 0 0 10px;
             }
             .nav_lista_secciones_sitio_visible{
                 left: 0;
@@ -65,11 +68,12 @@
           
             .header_nav_logo1{
            
-            width:51px;
+            width:48px;
             height: $height-nav-bar-media768;
             }
             .header_nav_toggle{
-             
+                font-size: 50px;
+                margin: 0 10px 0 10px;
                 }
             .nav_lista_secciones_sitio{
                 top: $height-nav-bar-media768;
@@ -79,15 +83,16 @@
                     
                     li{
                         a{
-                            font-size: 2;
+                            font-size: 2vh;
                         }
                     }
                 }
             }
             .header_nav_mxflag{
                 order: 1;
-                height: 60px;
-                margin: 0 0 0 30px;
+                height: 30px;
+                width: 30px;
+                margin: 0 0 0 10px;
             }
            
         }

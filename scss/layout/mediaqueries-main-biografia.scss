@@ -6,18 +6,22 @@
             width: 96%;
             margin-top: 15px;
             margin-bottom: 15px;
+            margin-left: 0;
             align-self: center;
             min-height: 40px;
             writing-mode: horizontal-tb;
         }
     
     .biografia_container{
+        width: 96%;
+        margin-left: 0;
         height: fit-content;
         overflow: visible;
         background-size: contain;
         background-position-x: calc(100% + 0px);/*200px;*/
         align-items:center;
         height:fit-content;
+        align-self: center;
         .contenedor_txt{
             width: 100%;
             height: fit-content;
