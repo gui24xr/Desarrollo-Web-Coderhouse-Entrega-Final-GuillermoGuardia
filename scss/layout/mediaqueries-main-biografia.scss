@@ -1,47 +1,39 @@
-/* MEDIA 768 ---------------------------------*/
+@media (max-width: 1025px){
 
-
-@media (max-width: 768px){
-
-    .biografia_container{
-
-        margin-bottom: 0;
-        height: 880px;
-        background-position-x: -200px;
-        .contenedor_txt{
-            width: 45%;
-            margin-left: 0;
+    .section-bio{
+        flex-direction: column;
+        .section-name-bio{
+            width: 96%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            align-self: center;
+            min-height: 40px;
+            writing-mode: horizontal-tb;
         }
-
-
-    }
-
-
-       
-}
-
-
-/* MEDIA 414 ---------------------------------*/
-
-@media (max-width: 414px){
-
+    
     .biografia_container{
-        background-size:140%;
-        margin-bottom: 0;
-        height: 620px;
-        background-position-x: -80px;
+        height: fit-content;
+        overflow: visible;
+        background-size: contain;
+        background-position-x: calc(100% + 0px);/*200px;*/
+        align-items:center;
+        height:fit-content;
         .contenedor_txt{
             width: 100%;
-            height: 55%;
-            margin-left: 0;
+            height: fit-content;
+            padding: 80px 20px 80px 20px;
+            margin-top: calc(50%);
+            h1{
+                font-size: 32px;
+                margin-bottom: 70px;
+            }
+            p{
+                font-size: 18px;
+                letter-spacing: 0.3px;
+            }
         }
-
-
     }
 
 
-       
-}
-
-
+}}
 

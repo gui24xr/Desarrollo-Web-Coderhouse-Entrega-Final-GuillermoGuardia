@@ -8,7 +8,7 @@
             .header_nav_logo1{
             order: 2;
             align-self:stretch;
-            width:70px;
+            width:60px;
             height: $height-nav-bar-media1025;
             }
             .header_nav_toggle{
@@ -65,14 +65,14 @@
           
             .header_nav_logo1{
            
-            width:70px;
+            width:51px;
             height: $height-nav-bar-media768;
             }
             .header_nav_toggle{
              
                 }
             .nav_lista_secciones_sitio{
-               
+                top: $height-nav-bar-media768;
                 ul{
                
                     

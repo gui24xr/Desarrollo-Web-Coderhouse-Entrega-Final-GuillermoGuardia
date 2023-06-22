@@ -1142,14 +1142,14 @@
 
 @media (max-width: 1025px) {
   .header .header_nav_bar {
-    height: 100px;
+    height: 70px;
     justify-content: space-between;
     align-items: center; }
     .header .header_nav_bar .header_nav_logo1 {
       order: 2;
       align-self: stretch;
-      width: 70px;
-      height: 100px; }
+      width: 60px;
+      height: 70px; }
     .header .header_nav_bar .header_nav_toggle {
       order: 3;
       display: block;
@@ -1158,7 +1158,7 @@
       order: 4;
       position: fixed;
       justify-content: center;
-      top: 100px;
+      top: 70px;
       width: 100%;
       height: 90vh;
       left: 100%;
@@ -1183,12 +1183,14 @@
 
 @media (max-width: 768px) {
   .header .header_nav_bar {
-    height: 90px; }
+    height: 60px; }
     .header .header_nav_bar .header_nav_logo1 {
-      width: 70px;
-      height: 90px; }
-    .header .header_nav_bar .nav_lista_secciones_sitio ul li a {
-      font-size: 2; }
+      width: 51px;
+      height: 60px; }
+    .header .header_nav_bar .nav_lista_secciones_sitio {
+      top: 60px; }
+      .header .header_nav_bar .nav_lista_secciones_sitio ul li a {
+        font-size: 2; }
     .header .header_nav_bar .header_nav_mxflag {
       order: 1;
       height: 60px;
@@ -1209,7 +1211,27 @@
   .seccion_footer .informacion_pie .leyendas_pie p {
     font-size: 1.9vh; } }
 
-/* --- MEDIA 414 ----------------------------------------- */
+@media (max-width: 576px) {
+  .seccion_footer .div_suscripcion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 300px;
+    padding: 10px 0 20px 0; }
+    .seccion_footer .div_suscripcion p {
+      font-size: 16px; }
+    .seccion_footer .div_suscripcion .formulario_suscripcion {
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .seccion_footer .div_suscripcion .formulario_suscripcion .button_suscripcion {
+        margin-right: 0;
+        padding: 2px 6px 2px 6px;
+        font-size: 16px;
+        width: fit-content;
+        align-self: center; }
+  .seccion_footer .informacion_pie .leyendas_pie p {
+    font-size: 1.9vh; } }
+
 @media (max-width: 768px) {
   .index_container_ppal {
     display: flex;
@@ -1251,27 +1273,35 @@
       .index_container_ppal .spoty_container .spoty_2 {
         width: 300px; } }
 
-/* MEDIA 768 ---------------------------------*/
-@media (max-width: 768px) {
-  .biografia_container {
-    margin-bottom: 0;
-    height: 880px;
-    background-position-x: -200px; }
-    .biografia_container .contenedor_txt {
-      width: 45%;
-      margin-left: 0; } }
-
-/* MEDIA 414 ---------------------------------*/
-@media (max-width: 414px) {
-  .biografia_container {
-    background-size: 140%;
-    margin-bottom: 0;
-    height: 620px;
-    background-position-x: -80px; }
-    .biografia_container .contenedor_txt {
-      width: 100%;
-      height: 55%;
-      margin-left: 0; } }
+@media (max-width: 1025px) {
+  .section-bio {
+    flex-direction: column; }
+    .section-bio .section-name-bio {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb; }
+    .section-bio .biografia_container {
+      height: fit-content;
+      overflow: visible;
+      background-size: contain;
+      background-position-x: calc(100% + 0px);
+      /*200px;*/
+      align-items: center;
+      height: fit-content; }
+      .section-bio .biografia_container .contenedor_txt {
+        width: 100%;
+        height: fit-content;
+        padding: 80px 20px 80px 20px;
+        margin-top: calc(50%); }
+        .section-bio .biografia_container .contenedor_txt h1 {
+          font-size: 32px;
+          margin-bottom: 70px; }
+        .section-bio .biografia_container .contenedor_txt p {
+          font-size: 18px;
+          letter-spacing: 0.3px; } }
 
 @media (max-width: 768px) {
   .contrataciones_container {
