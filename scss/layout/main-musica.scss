@@ -11,13 +11,13 @@
         background-color: rgb(255, 255, 255);
         box-shadow: $boxshadow-tipo3;
         grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-        grid-template-row: repeat(auto-fit,minmax(200px,1fr));
+        
         justify-items: center;
         gap: 10px;
         row-gap: 50px;       
         //background-image: url("../imagenes/img_portada_index.jpg");
         background-size: contain;
-        background-color: rgb(92, 85, 85);
+        background-color: transparent;
         
         .frame-song{
             display: flex;
@@ -60,6 +60,7 @@
                     letter-spacing: 1px;
                     font-weight: bold;
                     font-size: 18px;
+                    justify-self: center;
                 }
                 audio{
                     width: 180px;
