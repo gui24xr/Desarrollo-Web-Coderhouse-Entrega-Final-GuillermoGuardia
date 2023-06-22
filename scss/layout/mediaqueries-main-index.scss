@@ -1,134 +1,112 @@
-@media (max-width: 1025px){
-    .section-portada-noticias{
-        .titulo-noticias-portada{
-            font-size: 1.5vh;
-        }
-  
+@media (max-width: 1025px) {
+  .section-portada-noticias {
+    .titulo-noticias-portada {
+      font-size: 1.5vh;
     }
+  }
 
-    .section-prox-shows{
-        .titulo_prox_shows{
-            font-size: 1.5vh; 
-        }
+  .section-prox-shows {
+    .titulo_prox_shows {
+      font-size: 1.5vh;
     }
+  }
 
-    .section-spotys{
-        .titulo_spotys{
-          font-size: 1.5vh; 
-        }
+  .section-spotys {
+    .titulo_spotys {
+      font-size: 1.5vh;
     }
+  }
 }
 
-
-@media (max-width: 768px){
-    .section-portada-noticias{
-        .titulo-noticias-portada{
-            font-size: 2vh;
-        }
-        .wraper-noticias-portada{
-            grid-template-columns: repeat(auto-fit,minmax(500px,1fr)); 
-        }
+@media (max-width: 768px) {
+  .section-portada-noticias {
+    .titulo-noticias-portada {
+      font-size: 2vh;
     }
-
-    .section-prox-shows{
-        .titulo_prox_shows{
-            font-size: 2vh; 
-        }
+    .wraper-noticias-portada {
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
+  }
 
-    .section-spotys{
-        .titulo_spotys{
-          font-size: 2vh; 
-        }
+  .section-prox-shows {
+    .titulo_prox_shows {
+      font-size: 2vh;
     }
+  }
+
+  .section-spotys {
+    .titulo_spotys {
+      font-size: 2vh;
+    }
+  }
 }
 
-
-@media (max-width: 576px){
-    
-.portada_index{
-   
+@media (max-width: 576px) {
+  .portada_index {
     background-image: url("../imagenes/img_portada_tour2.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-y: calc(50%);
     background-position-x: calc(50%);
-    .titulo_index{
+    .titulo_index {
       font-size: 50px;
-       }
-}
+    }
+  }
 
-
-.section-portada-noticias{
+  .section-portada-noticias {
     flex-direction: column;
     align-items: center;
-    .titulo-noticias-portada{
-        width: 96%;
-        margin-top: 15px;
-        //margin-bottom: 15px;
-        //margin-left: 0;
-        //align-self: center;
-        min-height: 40px;
-        writing-mode: horizontal-tb;
+    .titulo-noticias-portada {
+      width: 96%;
+      margin-top: 15px;
+      //margin-bottom: 15px;
+      //margin-left: 0;
+      //align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb;
     }
-    .wraper-noticias-portada{
-        width: 96%;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 50px;
-                
-        }
-}
-    
+    .wraper-noticias-portada {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 50px;
+    }
+  }
 
-.section-prox-shows{
+  .section-prox-shows {
     flex-direction: column;
     align-items: center;
-    .titulo_prox_shows{
-        width: 96%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 0;
-        align-self: center;
-        min-height: 40px;
-        writing-mode: horizontal-tb;
+    .titulo_prox_shows {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb;
     }
-    .grid-prox-shows{
-        width: 96%;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 50px;
-      
+    .grid-prox-shows {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 50px;
     }
-}
+  }
 
-
-.section-spotys{
+  .section-spotys {
     flex-direction: column;
     align-items: center;
-    .titulo_spotys{
-            width: 96%;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            margin-left: 0;
-            align-self: center;
-            min-height: 40px;
-            writing-mode: horizontal-tb;  
+    .titulo_spotys {
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb;
     }
-    .grid-spotys{
-        width: 96%;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 50px;
-        .spoty_prev{
-           
-        }
+    .grid-spotys {
+      width: 96%;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 50px;
     }
-}
-    
-    
-    
-    
-   
-
-
-
-
+  }
 }

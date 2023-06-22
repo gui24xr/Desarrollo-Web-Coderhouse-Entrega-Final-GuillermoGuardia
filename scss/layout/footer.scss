@@ -1,139 +1,130 @@
-.seccion_footer{
+.seccion_footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  .footer_social_bar {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    overflow: hidden;
-    .footer_social_bar{
+    min-height: 70px;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(3, 90, 64);
+    P {
+      background-color: transparent;
+      font-family: familia_barlow;
+      font-size: 26px;
+      font-weight: bolder;
+      color: white;
+    }
+    nav {
+      background-color: transparent;
+      ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-height: 70px;
-        height:fit-content;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background-color: rgb(3, 90, 64);
-        P{
+        /*flex-direction: column;*/
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+        text-decoration: none;
+        /*padding: 5px 5px 5px 5px;*/
+        li {
+          list-style-type: none;
+          background-color: transparent;
+          a {
             background-color: transparent;
-            font-family: familia_barlow;
-            font-size: 26px;
-            font-weight: bolder;
-            color: white;
-        }
-        nav{
-            background-color: transparent;
-            ul{
-                display: flex;
-                flex-wrap: wrap;
-                /*flex-direction: column;*/
-                width: fit-content;
-                height: fit-content;
-                background-color: transparent;
-                text-decoration: none;
-                /*padding: 5px 5px 5px 5px;*/
-                li{
-                    list-style-type:none;
-                    background-color:transparent;
-                    a{
-                        background-color:transparent;
-                        img{
-                            background-color: transparent;
-                            width: $alto-iconos-social-bar;
-                            height: $ancho-iconos-social-bar;
-                           &:hover{
-                                background-blend-mode:soft-light;
-                                transform: scale(1.3);
-                            }
-                        }
-                    } 
-                }
+            img {
+              background-color: transparent;
+              width: $alto-iconos-social-bar;
+              height: $ancho-iconos-social-bar;
+              &:hover {
+                background-blend-mode: soft-light;
+                transform: scale(1.3);
+              }
             }
+          }
         }
+      }
     }
-    
-    
-    .div_suscripcion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-height:min-content;
-        background-color: $color-div-suscripcion;
-        box-shadow: $boxshadow-tipo1;
-        border-top: solid 1px #FFFFFF;
-        border-bottom: solid 1px #FFFFFF;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 35px;
-        padding-right: 35px;
-        p{
-            margin: 0 20px 0 0px;
-            background-color:transparent;
-            font-family: familia_barlow;
-            color: $color-letras-div-suscripcion;/* white;*/
-            font-size: 18px;
-            letter-spacing: 3px;
-        }
-        .formulario_suscripcion{
-            
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            background-color: transparent;
-            height: fit-content;
-            gap: 30px;
-            input{
-                width: 250px;
-                height: 30px;
-                background-color: #FFFFFF;
-            }
-            .button_suscripcion{
-               @include estilo_boton_rectangular_transparente;
-               margin-right: 30px;
-            }
-        }
-        .link_contratacion{
-            display: flex;  
-            justify-content:flex-end;
-            background-color: transparent;
-           
-            padding-left: 30px;
-            border-left: solid white;
-           a{                    
-              @include estilo_boton_rectangular_transparente;
-              text-decoration: none;
-            }
-        }
-    }
+  }
 
-    
-    .informacion_pie{
-        
-        display: flex;
-        flex-direction: column;
-        height: 100vh; /*max-content;*/
-        min-height: 300px;
-        align-items:center;
-        justify-content: center;
-        background-color: rgb(0, 0, 0); /*$color-fondo-nav-bar;*/
-        .leyendas_pie{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 30px;
-            background-color: transparent;
-            p{
-                font-family: 'Courier New', Courier, monospace;
-                color: #FFFFFF;
-                background-color: transparent;
-                font-size:2.5vh;
-            }
-        }
-        
+  .div_suscripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: min-content;
+    background-color: $color-div-suscripcion;
+    box-shadow: $boxshadow-tipo1;
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    p {
+      margin: 0 20px 0 0px;
+      background-color: transparent;
+      font-family: familia_barlow;
+      color: $color-letras-div-suscripcion; /* white;*/
+      font-size: 18px;
+      letter-spacing: 3px;
     }
+    .formulario_suscripcion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: transparent;
+      height: fit-content;
+      gap: 30px;
+      input {
+        width: 250px;
+        height: 30px;
+        background-color: #ffffff;
+      }
+      .button_suscripcion {
+        @include estilo_boton_rectangular_transparente;
+        margin-right: 30px;
+      }
+    }
+    .link_contratacion {
+      display: flex;
+      justify-content: flex-end;
+      background-color: transparent;
+
+      padding-left: 30px;
+      border-left: solid white;
+      a {
+        @include estilo_boton_rectangular_transparente;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .informacion_pie {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /*max-content;*/
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0); /*$color-fondo-nav-bar;*/
+    .leyendas_pie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      background-color: transparent;
+      p {
+        font-family: "Courier New", Courier, monospace;
+        color: #ffffff;
+        background-color: transparent;
+        font-size: 2.5vh;
+      }
+    }
+  }
 }
-
-    
-   
-

@@ -1,32 +1,48 @@
-
 /*VARIBLES GENERALES SITIO */
 $color-fondo-sitio: rgb(255, 255, 255);
 $height-header: 70px;
 
-$boxshadow-tipo1: -32px 22px 15px 0px rgba(0,0,0,0.1),
-inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+$boxshadow-tipo1: -32px 22px 15px 0px rgba(0, 0, 0, 0.1),
+  inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1),
+  0px 10px 41px -3px rgba(0, 0, 0, 0.1),
+  inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-$boxshadow-tipo2: inset 38px 46px 91px -28px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),24px 29px 40px 11px rgba(0,0,0,0.1),28px 10px 15px -3px rgba(0,0,0,0.1),24px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+$boxshadow-tipo2: inset 38px 46px 91px -28px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 29px 40px 11px rgba(0, 0, 0, 0.1),
+  28px 10px 15px -3px rgba(0, 0, 0, 0.1), 24px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
-$boxshadow-tipo3: -32px 22px 15px 0px rgba(0,0,0,0.1),
-inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-
-
+$boxshadow-tipo3: -32px 22px 15px 0px rgba(0, 0, 0, 0.1),
+  inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1),
+  0px 10px 41px -3px rgba(0, 0, 0, 0.1),
+  inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
 /*VARIABLES BARRAS DE NAVEGACION Y SOCIAL BAR*/
 $height-nav-bar: 80px; //10vh;
-$height-nav-bar-media1025:80px;
-$height-nav-bar-media768:60px;
-$ancho-nav-bar-media576:90px;
-$color-fondo-nav-bar: hsla(241, 75%, 39%, 1);  /*rgb(49, 44, 44);*/
+$height-nav-bar-media1025: 80px;
+$height-nav-bar-media768: 60px;
+$ancho-nav-bar-media576: 90px;
+$color-fondo-nav-bar: hsla(241, 75%, 39%, 1); /*rgb(49, 44, 44);*/
 $color-fondo-nav-bar-hover: hsla(240, 5%, 61%, 0.65);
 $color-fondo-nav-bar-media: hsla(240, 5%, 61%, 0.65);
-$color-social-bar:  rgba(248, 248, 248, 0.3);/*hsla(241, 75%, 39%, 0.45);  hsla(241, 75%, 39%, 0.45);*/
-$ancho-iconos-social-bar:50px;
+$color-social-bar: rgba(
+  248,
+  248,
+  248,
+  0.3
+); /*hsla(241, 75%, 39%, 0.45);  hsla(241, 75%, 39%, 0.45);*/
+$ancho-iconos-social-bar: 50px;
 $alto-iconos-social-bar: 50px;
 $posicion-social-bar: 400px 0px 0px 96%;
 $posicion-x-social-bar: 96%;
@@ -38,7 +54,7 @@ $posicion-y-boton-activar-social-bar: 300px;
 $posicion-x-social-bar-768: 30%;
 $posicion-y-social-bar-768: 750px;
 
-$ancho-nav-bar-media414:58px;
+$ancho-nav-bar-media414: 58px;
 $posicion-x-social-bar-414: 0;
 $posicion-y-social-bar-414: 80px;
 
@@ -49,4 +65,4 @@ $ancho-container-secciones: 95%;
 //COLORES
 $color-verde-mexico-flag: rgb(3, 90, 64);
 $color-blanco-mexico-flag: rgb(255, 255, 255);
-$color-rojo-mexico-flag: rgb(187, 30, 30); 
+$color-rojo-mexico-flag: rgb(187, 30, 30);

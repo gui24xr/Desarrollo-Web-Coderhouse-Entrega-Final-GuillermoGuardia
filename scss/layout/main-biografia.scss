@@ -1,46 +1,43 @@
+.section-bio {
+  display: flex;
+  margin-bottom: 10vh;
 
-.section-bio{
-    display: flex;
-    margin-bottom: 10vh;
-    
-    .section-name-bio{
-        @include box-nombre-seccion($color-rojo-mexico-flag,white,none)
-        
-  
-    }
+  .section-name-bio {
+    @include box-nombre-seccion($color-rojo-mexico-flag, white, none);
+  }
 
-    .biografia_container{
-            
-        @include container_secciones(flex,url("../imagenes/img_portada_bio.jpg"));
-        width: $ancho-container-secciones;
-        background-size:cover;
-        background-repeat: no-repeat;
-        margin-top: 0;
-        margin-left: 30px;
-        margin-top: 2vh;
-        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);-webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.75);
-        background-position-x: calc(100% + 200px);/*200px;*/
-        align-items: end; 
-        .contenedor_txt{
-            @include contenedor_informacion(column,35%,100%,rgba(5, 90, 55, 0.85));
-            justify-content: space-evenly;
-            margin: 0px 0px 0 0px;
-            h1{
-                padding-left: 30px;
-                background-color: transparent;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                color: rgb(255, 255, 255);
-            }
-            p{
-                width: 85%;
-                height: 70%;
-                align-self: center;
-                background-color: transparent;
-                overflow-y: scroll;
-                color:white;
-                font-family: familia_3;
-            }
-        }       
+  .biografia_container {
+    @include container_secciones(flex, url("../imagenes/img_portada_bio.jpg"));
+    width: $ancho-container-secciones;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-left: 30px;
+    margin-top: 2vh;
+    box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.75);
+    background-position-x: calc(100% + 200px); /*200px;*/
+    align-items: end;
+    .contenedor_txt {
+      @include contenedor_informacion(column, 35%, 100%, rgba(5, 90, 55, 0.85));
+      justify-content: space-evenly;
+      margin: 0px 0px 0 0px;
+      h1 {
+        padding-left: 30px;
+        background-color: transparent;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(255, 255, 255);
+      }
+      p {
+        width: 85%;
+        height: 70%;
+        align-self: center;
+        background-color: transparent;
+        overflow-y: scroll;
+        color: white;
+        font-family: familia_3;
+      }
     }
+  }
 }
-

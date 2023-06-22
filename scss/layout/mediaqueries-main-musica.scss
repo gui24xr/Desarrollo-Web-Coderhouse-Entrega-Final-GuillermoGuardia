@@ -1,80 +1,69 @@
-@media (max-width: 1025px){
-    .section-musica{
-        
-      
-        
-        .wraper-musica{
-            min-height: 80vh;
-            align-self: center;
-            align-items: center;
-            //padding: 60px 0px 60px 0px;
-        }
+@media (max-width: 1025px) {
+  .section-musica {
+    .wraper-musica {
+      min-height: 80vh;
+      align-self: center;
+      align-items: center;
+      //padding: 60px 0px 60px 0px;
     }
-          
+  }
 }
 
-@media (max-width: 576px){
-    
-    .section-musica{
+@media (max-width: 576px) {
+  .section-musica {
+    flex-direction: column;
+    .section-titulo-musica {
+      flex-direction: row;
+      width: 100%;
+      width: 96%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 0;
+      align-self: center;
+      min-height: 40px;
+      writing-mode: horizontal-tb;
+
+      .colorflag1 {
+        width: 30%;
+        height: 40px;
+      }
+      .colorflag2 {
+        width: 40%;
+        height: 40px;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+      }
+      .colorflag3 {
+        width: 30%;
+        height: 40px;
+      }
+    }
+    .wraper-musica {
+      align-self: center;
+      align-items: center;
+      padding: 60px 0px 60px 0px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+      .frame-song {
         flex-direction: column;
-        .section-titulo-musica{
-            flex-direction: row;
-            width: 100%;
-            width: 96%;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            margin-left: 0;
-            align-self: center;
-            min-height: 40px;
-            writing-mode: horizontal-tb;
-            
-            .colorflag1{
-                width: 30%;
-                height:40px;
-            }
-            .colorflag2{
-                width: 40%;
-                height:40px;
-                writing-mode: horizontal-tb;
-                text-orientation:sideways;
-            }
-            .colorflag3{
-                width: 30%;
-                height:40px;
-            }
-        }
-        .wraper-musica{
-            align-self: center;
-            align-items: center;
-            padding: 60px 0px 60px 0px;
-            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-                 
-            .frame-song{
-                flex-direction: column;
-                gap: 10px;
-                
-                .div-pic{
-                    
-                    .song-pic{
-                        width: 160px;
-                        height: 160px;
-                        transform: scale(1.1);
-                        border-radius: 25px;
-                        &:hover{
-                            background-blend-mode:soft-light;
-                            border-radius: 0px 0px 139px 0px;-moz-border-radius: 0px 0px 139px 0px;-webkit-border-radius: 0px 0px 139px 0px;border: 0px solid #000000;
-                        }
-                    }
-                }
-            }
-            
-            
-        }
-    
-        }
-          
-    
-    
+        gap: 10px;
 
-
+        .div-pic {
+          .song-pic {
+            width: 160px;
+            height: 160px;
+            transform: scale(1.1);
+            border-radius: 25px;
+            &:hover {
+              background-blend-mode: soft-light;
+              border-radius: 0px 0px 139px 0px;
+              -moz-border-radius: 0px 0px 139px 0px;
+              -webkit-border-radius: 0px 0px 139px 0px;
+              border: 0px solid #000000;
+            }
+          }
+        }
+      }
+    }
+  }
 }

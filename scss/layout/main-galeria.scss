@@ -1,77 +1,87 @@
-.galeria-pics{
-    display: flex;
+.galeria-pics {
+  display: flex;
 
-    .galeria-pics-titulo{
-        @include box-nombre-seccion($color-verde-mexico-flag,white,white)
+  .galeria-pics-titulo {
+    @include box-nombre-seccion($color-verde-mexico-flag, white, white);
+  }
+  .galeria-pics-wraper {
+    display: grid;
+    padding: 70px 30px 30px 30px;
+    width: $ancho-container-secciones;
+    height: min-content;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-auto-rows: minmax(280px, auto);
+    gap: 32px;
+    min-height: 430px;
+    box-shadow: $boxshadow-tipo3;
+    .grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #bfc9ce;
+      border-radius: 4px;
+      transition: transform 0.3s ease-in-out;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 0.75);
+      &:hover {
+        cursor: pointer;
+        background-blend-mode: soft-light;
+        transform: scale(1.1);
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1),
+          inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1),
+          0px 10px 41px -3px rgba(0, 0, 0, 0.1),
+          inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 139px 0px;
+        -moz-border-radius: 0px 0px 139px 0px;
+        -webkit-border-radius: 0px 0px 139px 0px;
+        border: 0px solid #000000;
+      }
     }
-    .galeria-pics-wraper{
-        display: grid;
-        padding: 70px 30px 30px 30px;
-        width: $ancho-container-secciones;
-        height: min-content;
-        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-        grid-auto-rows: minmax(280px, auto);
-        gap: 32px;
-        min-height: 430px;
-        box-shadow: $boxshadow-tipo3;
-        .grid-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #bfc9ce;
-            border-radius: 4px;
-            transition: transform 0.3s ease-in-out;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);-webkit-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);-moz-box-shadow: 10px 10px 0px -4px rgba(0,0,0,0.75);
-            &:hover{
-                cursor: pointer;
-                background-blend-mode:soft-light;
-                transform: scale(1.1);
-                box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
-                inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-                inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-                0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-                border-radius: 0px 0px 139px 0px;-moz-border-radius: 0px 0px 139px 0px;-webkit-border-radius: 0px 0px 139px 0px;border: 0px solid #000000;
-            }
-          }
-        }
+  }
+}
+
+.galeria-videos {
+  display: flex;
+
+  .galeria-videos-titulo {
+    @include box-nombre-seccion($color-rojo-mexico-flag, white, white);
+  }
+  .galeria-videos-wraper {
+    display: grid;
+    height: auto;
+    width: $ancho-container-secciones;
+    padding: 70px 20px 70px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: $boxshadow-tipo3;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    .video-prev {
+      width: 280px;
+      height: 190px;
+      &:hover {
+        cursor: pointer;
+        background-blend-mode: soft-light;
+        transform: scale(1.1);
+        box-shadow: -32px 22px 15px 0px rgba(0, 0, 0, 0.1),
+          inset 0px 21px 45px 22px rgba(0, 0, 0, 0.1),
+          0px 10px 41px -3px rgba(0, 0, 0, 0.1),
+          inset 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 139px 0px;
+        -moz-border-radius: 0px 0px 139px 0px;
+        -webkit-border-radius: 0px 0px 139px 0px;
+        border: 0px solid #000000;
+      }
     }
-
-
-
-    .galeria-videos{
-        display: flex;
-    
-        .galeria-videos-titulo{
-            @include box-nombre-seccion($color-rojo-mexico-flag,white,white)
-        }
-        .galeria-videos-wraper{
-            display: grid;
-            height: auto;
-            width: $ancho-container-secciones;
-            padding: 70px 20px 70px 20px;
-            background-color: rgb(255, 255, 255);
-            box-shadow: $boxshadow-tipo3;
-            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-            justify-items: center;
-            gap: 10px;
-            .video-prev {
-                width: 280px;
-                height: 190px;
-                &:hover{
-                    cursor: pointer;
-                    background-blend-mode:soft-light;
-                    transform: scale(1.1);
-                    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
-                    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
-                    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
-                    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-                    border-radius: 0px 0px 139px 0px;-moz-border-radius: 0px 0px 139px 0px;-webkit-border-radius: 0px 0px 139px 0px;border: 0px solid #000000;
-                }
-              }
-            }
-        }
-    
-    
+  }
+}

@@ -1,87 +1,83 @@
-.section-musica{
-    display: flex;
-    .section-titulo-musica{
-        @include box-nombre-seccion-mexicoflag
-    }
-    .wraper-musica{
-        display: grid;
-        height: auto;
-        width: $ancho-container-secciones;
-        padding: 70px 20px 70px 20px;
-        background-color: rgb(255, 255, 255);
-        box-shadow: $boxshadow-tipo3;
-        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-        
-        justify-items: center;
-        gap: 10px;
-        row-gap: 50px;       
-        //background-image: url("../imagenes/img_portada_index.jpg");
-        background-size: contain;
+.section-musica {
+  display: flex;
+  .section-titulo-musica {
+    @include box-nombre-seccion-mexicoflag;
+  }
+  .wraper-musica {
+    display: grid;
+    height: auto;
+    width: $ancho-container-secciones;
+    padding: 70px 20px 70px 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: $boxshadow-tipo3;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    justify-items: center;
+    gap: 10px;
+    row-gap: 50px;
+    //background-image: url("../imagenes/img_portada_index.jpg");
+    background-size: contain;
+    background-color: transparent;
+
+    .frame-song {
+      display: flex;
+      flex-direction: row;
+      height: fit-content;
+      background-color: transparent;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transform: scale(1.06);
+      }
+      .div-pic {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
-        
-        .frame-song{
-            display: flex;
-            flex-direction: row;
-            height: fit-content;
-            background-color: transparent;
-           
-            &:hover{
-                cursor: pointer;
-                opacity: 0.9;
-                transform: scale(1.06);
-            }
-            .div-pic{      
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: transparent;
-                
-               
-                .song-pic{
-                    //De aca manejo el tamaño de la division a travez del tamaño img
-                  width: 130px;
-                  height: 130px;
-                }
-            }
-            .info-song{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-items: center;
-                
-                gap: 10px;
-                padding: 10px 20px 10px 20px;
-                max-width: 260px;
-                
-                p{
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                    font-weight: bold;
-                    font-size: 18px;
-                    justify-self: center;
-                }
-                audio{
-                    width: 180px;
-                    height: 25px;
-                }
-                a{
-                    text-decoration: none;
-                    .spoty-framesong{
-                        width: 25px;
-                        height: 25px;
-                        background-color: transparent;
-                        &:hover{
-                            cursor: pointer;
-                            transform: scale(1.2);
-                        }
-                    }
-                }
-            }
+
+        .song-pic {
+          //De aca manejo el tamaño de la division a travez del tamaño img
+          width: 130px;
+          height: 130px;
         }
-    }
+      }
+      .info-song {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
 
-    }
-      
+        gap: 10px;
+        padding: 10px 20px 10px 20px;
+        max-width: 260px;
 
+        p {
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-weight: bold;
+          font-size: 18px;
+          justify-self: center;
+        }
+        audio {
+          width: 180px;
+          height: 25px;
+        }
+        a {
+          text-decoration: none;
+          .spoty-framesong {
+            width: 25px;
+            height: 25px;
+            background-color: transparent;
+            &:hover {
+              cursor: pointer;
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
