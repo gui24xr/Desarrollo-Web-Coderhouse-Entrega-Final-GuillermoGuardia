@@ -148,7 +148,7 @@
             letter-spacing: 0.15em;
             font-style: normal;
             font-weight: 400px;
-            font-size: 2.2vh;
+            font-size: 18px;
             text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.6); }
     .header .header_nav_bar .header_nav_mxflag {
       /*flex-grow: 0.2;*/
@@ -1203,36 +1203,7 @@
         font-size: 20px; }
     .header .header_nav_bar .header_nav_mxflag {
       height: 35px;
-      margin: 0 0 0 10px; }
-  .header .social_bar {
-    background-color: #110ea1;
-    left: 0;
-    top: 80px; }
-  .header .social_bar_visible {
-    left: 100%; } }
-
-@media (max-width: 768px) {
-  .portada_intro {
-    top: 20%;
-    width: 90%;
-    height: 900px;
-    background-size: contain;
-    background-position-y: 100px; }
-  .intro_visible_off {
-    left: 100%; }
-  .intro_visible_on {
-    left: 5%; }
-  .portada_noticias {
-    position: fixed;
-    top: 8%;
-    left: -100%;
-    display: flex;
-    width: 90%;
-    height: 800px; }
-  .intro_noticias_off {
-    left: 100%; }
-  .noticias_visible {
-    left: 5%; } }
+      margin: 0 0 0 10px; } }
 
 @media (max-width: 768px) {
   .seccion_footer {
