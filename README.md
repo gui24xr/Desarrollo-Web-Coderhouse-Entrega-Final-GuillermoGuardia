@@ -14,7 +14,8 @@
     https://gui24xr.github.io/Desarrollo-Web-Coderhouse-Entrega-Final-GuillermoGuardia/
 
 
-3- LINK PRESUPUESTO
+3- PRESUPUESTO.
+El mismo se encuentra en este repositorio bajo el nombre  "PRESUPUESTO.docx".
  
 
 4- LINK FIGMA DEL PROYECTO ORIGINAL ENTREGADO EN LA PRIMERA ENTREGA DE ESTE CURSO.
