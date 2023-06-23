@@ -10,19 +10,19 @@
 
 @font-face {
   font-family: familia_1;
-  src: url("fonts/Staatliches-Regular.ttf"); }
+  src: url("/fonts/Staatliches-Regular.ttf"); }
 
 @font-face {
   font-family: familia_2;
-  src: url("fonts/Staatliches-Regular.ttf"); }
+  src: url("/fonts/Staatliches-Regular.ttf"); }
 
 @font-face {
   font-family: familia_roboto;
-  src: url("fonts/Roboto-Bold.ttf"); }
+  src: url("/fonts/Roboto-Bold.ttf"); }
 
 @font-face {
   font-family: familia_barlow;
-  src: url("fonts/BarlowCondensed-Regular.ttf"); }
+  src: url("/fonts/BarlowCondensed-Regular.ttf"); }
 
 @font-face {
   font-family: familia_questrial;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: familia_bodoni;
-  src: url("BodoniModa_18pt-Italic"); }
+  src: url("/BodoniModa_18pt-Italic"); }
 
 /* CONTENEDOR DE LOS MAIN DE SECCIONES (EXCEPTO INDEX)*/
 /* CONTENEDOR GRID DE GALERIA */
@@ -190,7 +190,7 @@
 .portada_index {
   width: 100%;
   height: 90vh;
-  background-image: url("../imagenes/img_portada_tour2.jpg");
+  background-image: url("/imagenes/img_portada_tour2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: calc(50%);
@@ -1133,7 +1133,7 @@
   .seccion_footer .div_suscripcion {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     min-height: 300px;
     padding: 10px 0 20px 0; }
     .seccion_footer .div_suscripcion p {
